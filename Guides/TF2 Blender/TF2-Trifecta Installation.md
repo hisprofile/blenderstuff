@@ -44,4 +44,7 @@ C:\Users\example\Documents\TF2 Collection\weapons\weapons.blend
 ```
 </details>
 
-Open Blender, and go to `Edit > Preferences > Add-ons > TF2-Trifecta` and click on `Add Paths from Folder.` Select the folder containing 
+Open Blender, and go to `Edit > Preferences > Add-ons > TF2-Trifecta` and click on `Add Paths from Folder.` Select the folder containing all the asset folders and confirm.  
+<img src="https://github.com/hisprofile/blenderstuff/assets/41131633/315a4500-3a38-4799-aeed-006d150b5b6f" height=300> <img src="https://github.com/hisprofile/blenderstuff/assets/41131633/25b690f2-85fd-47bd-90d3-3b95e5603fd5" height=300>
+
+Now add a set of rigs.  
