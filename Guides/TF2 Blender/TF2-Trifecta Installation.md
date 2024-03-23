@@ -4,8 +4,11 @@ After downloading the [latest version](https://github.com/hisprofile/TF2-Trifect
 Locate the newly downloaded .zip file, select it and choose `Install Add-on`. In a moment's notice, the TF2-Trifecta will be installed into Blender. Now, the only thing left is to install the assets used by `Wardrobe` and `Merc-Deployer.`
 
 # Installing Assets
-### Requires 4GB of free space!
-##### Both methods use Google Drive to download from, as I don't know of any straight forward, cheap file hosting services. If you know of one that requires no API to download from, then don't hesitate to reach out. If you are being withheld from downloading by a rate limiter, then you have my sincerest apologies. I have no alternatives.
+> [!NOTE]
+> Requires 4GB of free space!
+
+> [!IMPORTANT]
+> Both methods use Google Drive to download from, as I don't know of any straight forward, cheap file hosting services. If you know of one that requires no API to download from, then don't hesitate to reach out. If you are being withheld from downloading by a rate limiter, then you have my sincerest apologies. I have no alternatives.
 
 ## Method #1
 The easiest way to install the assets is by going into the `Scene Properties` and using the `Install TF2 Collection` feature with `Include Rigs` enabled. Set the installation path to an empty folder and begin.  
@@ -55,4 +58,3 @@ Now add a set of rigs. Navigate to the path where you extracted the rig-set.
 
 After Downloading and setting up The TF2 Collection & a rig-set, your installation of the TF2-Trifecta should look like this. There should be **no** mention of any missing assets.  
 <img src="https://github.com/hisprofile/blenderstuff/assets/41131633/abc32b7d-e946-48ac-8fb4-9691ac188b05" width=360>
-
