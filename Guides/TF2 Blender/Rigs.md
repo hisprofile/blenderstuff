@@ -39,7 +39,6 @@ ThatLazyArtist's rigs take a more traditional path towards rigged face posing, b
 
 # Features  
 - All rigs have wrinkle maps to add details to the face.[^1]
-[^1]:Wrinkle maps are calculated based on values of shapekeys, not how the mesh squishes and stretches.
 - hisanimations' and ThatLazyArtist's rigs have shapekeys along with flex controllers to pose the face. This is a single slider solution to creating mouth shapes. These rigs are compatible with facial cosmetics.[^2]
 - A QC eye shader was recreated to mimic the way Source engine eyes work. Eyeball meshes are not used.
 - The mercenaries use TF2 style shading to look as close to TF2 as possible. [(Blender)VertexLitGeneric](https://developer.valvesoftware.com/wiki/Blender_VertexLitGeneric), rim lights and lightwarps have all been implemented.[^3]
@@ -47,5 +46,6 @@ ThatLazyArtist's rigs take a more traditional path towards rigged face posing, b
 - Legacy rigs for importing animations onto
 - In-game and SFM versions of the mercenaries
 
+[^1]:Wrinkle maps are calculated based on values of shapekeys, not how the mesh squishes and stretches.
 [^2]:It's extremely easy to deform the face using shapekeys by activating two or more of them.
 [^3]:The Cycles renderer does not support lightwarps. The albedo textures can be multiplied by vales ranging from two to four to approximate the correct shade the mercenaries tend to have.
