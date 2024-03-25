@@ -16,7 +16,7 @@ For a good texture swap, make sure it matches the proportions of the eye below. 
 <img src="https://github.com/hisprofile/blenderstuff/assets/41131633/61840717-8783-4012-b6cc-52f3ceb56260" height=64>  
 <img src="https://github.com/hisprofile/blenderstuff/assets/41131633/265f7aa3-1ec8-400a-9ea6-c3467990c358" height=425>
 
-## Custom Flex Tool (Sculpt Tool)  
+## Custom Flexes (Sculpt Tool)  
 The sculpt tool is an incredibly fun tool to use when working with the mercenaries, as it can add mass amounts of stylization. The best way to approach this is to add a new shapekey to the head, so the original face shape stays intact.  
 <img src="https://github.com/hisprofile/blenderstuff/assets/41131633/865e83d0-bb44-448a-bf8e-6879aca8dbcb" width=50%>  
 Set the new shapekey's value to `1.0`, enter `Sculpt` mode and go crazy!  
@@ -26,5 +26,7 @@ Set the new shapekey's value to `1.0`, enter `Sculpt` mode and go crazy!
 
 ## How Facial Flexes Work  
 The way facial flexes work on these models are truly an incredible feat. Each head contains 300+ shapekeys with every way the face can realistically deform. Then, all of these shapekeys are condensed down to around 45 [Flex Controllers](https://developer.valvesoftware.com/wiki/Flex_controller) through a series of mathematical expressions. The result is a realistic simulation of how a face moves.  
+
+In other words, the faces simulate muscle strands through pure math. It's awesome!
 
 [Heavy's shapekeys and math expressions.](https://pastebin.com/DX6JsfzM)
