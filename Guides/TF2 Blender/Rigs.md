@@ -35,7 +35,8 @@ Eccentric's rigs are recommended for new users, as they provide an intuitive and
 
 ## TLA's Rigs
 ThatLazyArtist's rigs take a more traditional path towards rigged face posing, by using a panel with sliders off to the side of the head. While the sliders themselves are blank, the name of every slider can be viewed on the top left corner of the screen.
-<img src="https://github.com/hisprofile/blenderstuff/assets/41131633/212fbaf8-d271-43cf-87d0-4f12143b63b1" width=600>
+<img src="https://github.com/hisprofile/blenderstuff/assets/41131633/212fbaf8-d271-43cf-87d0-4f12143b63b1" width=600>  
+To activate the panel, flick open on the switch above the head.
 
 # Features  
 - All rigs have wrinkle maps to add details to the face.[^1]
@@ -48,4 +49,4 @@ ThatLazyArtist's rigs take a more traditional path towards rigged face posing, b
 
 [^1]:Wrinkle maps are calculated based on values of shapekeys, not how the mesh squishes and stretches.
 [^2]:It's extremely easy to deform the face using shapekeys by activating two or more of them.
-[^3]:The Cycles renderer does not support lightwarps. The albedo textures can be multiplied by vales ranging from two to four to approximate the correct shade the mercenaries tend to have.
+[^3]:The Cycles renderer does not support lightwarps. The albedo textures can be multiplied by values ranging from two to four to approximate the correct shade the mercenaries tend to have.
