@@ -5,7 +5,7 @@ At their core, every single rig functions the same as they use Rigify for contro
 
 <img src="https://github.com/hisprofile/blenderstuff/assets/41131633/6bb8212c-df0c-47d0-af3f-1dd9b8d097a5" width=50%>  
 
-##### _Selecting parts of an arm will allow you to change how that arm is controlled. Try selecting more bones to see what properties show up!_
+_Selecting parts of an arm will allow you to change how that arm is controlled. Try selecting more bones to see what properties show up!_
 
 # Available Rig-sets
 The rigs start to differ when it comes to how you can control the face, where three unique ideas surfaced.  
