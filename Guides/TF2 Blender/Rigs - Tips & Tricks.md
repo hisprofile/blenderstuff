@@ -24,6 +24,11 @@ Set the new shapekey's value to `1.0`, enter `Sculpt` mode and go crazy!
 <img src="https://github.com/hisprofile/blenderstuff/assets/41131633/038490c2-cca9-41bc-a493-a411002af69f" height=400>
 <img src="https://github.com/hisprofile/blenderstuff/assets/41131633/2ad8a43b-9463-4dea-8baa-9a1e586fb84c" height=400>
 
+<img src="https://github.com/hisprofile/blenderstuff/assets/41131633/5f9180bb-544b-45fe-b0d6-c5fc42f34afe" height=225>  
+
+_Made by [Letumgo](https://www.youtube.com/@Letumgo)_
+
+
 ## How Facial Flexes Work  
 The way facial flexes work on these models are truly an incredible feat. Each head contains 300+ shapekeys with every way the face can realistically deform. Then, all of these shapekeys are condensed down to around 45 [Flex Controllers](https://developer.valvesoftware.com/wiki/Flex_controller) through a series of mathematical expressions. The result is a realistic simulation of how a face moves.  
 
