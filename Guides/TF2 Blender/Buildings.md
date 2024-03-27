@@ -61,3 +61,5 @@ Teleporters have been rigged the simplest they can be. Spinning can be procedura
       - A geometry node group named `Teleporter Procedural Spin` has been added to spin the top of the teleporter. This method is not FPS locked and speed will remain constant. This method is recommended as the spinning behavior is similar to the game. Adjusting speed is done through `User-Defined Speed` or `Preset Speed`. `Preset Speed` has six different speed options available.
 
         The transitioning between differing speeds can be adjusted through `Transition Mix`.
+        
+        If you use this method and want to keep the teleporter blur object, then hide or delete the trails that activate through the `CHARGE` slider as the trails are included in the node group.
