@@ -1,4 +1,5 @@
-# Buildings  
+# [Buildings](https://drive.google.com/drive/u/1/folders/11vyl_97Xy8LE-VPECfLlJ876poRZp6AT)  
+[Download link](https://drive.google.com/drive/u/1/folders/11vyl_97Xy8LE-VPECfLlJ876poRZp6AT)  
 All of engineer's buildings have been ported and rigged for cinematic purposes.
 
 # Sentries  
@@ -14,6 +15,8 @@ Sentries are now fun to use and animate. Instead of rotating them towards a targ
   - Muzzle flashes are rigged by dragging a slider shaped like a cone from left to right. The muzzle flashes are adjustable in width, length, and particle count, and can be adjusted when selecting the muzzle flashes.
 - Togglable sappers and sapper outlines through sliders
 - Dimmed shield and togglable laser through wrangler slider
+  - Shield particle properties can be adjusted in the modifier panel.  
+    <img src="https://github.com/hisprofile/blenderstuff/assets/41131633/484099b8-909f-4b5e-baa2-187d3c067b49" height=300>  
 - Firing animations
 - No Ammo animations
 - LVL. 3 Sentries with IK rocket heads
@@ -38,3 +41,23 @@ Teleporters have been rigged the simplest they can be. Spinning can be procedura
 
 <img src="https://github.com/hisprofile/blenderstuff/assets/41131633/b610c8ed-a604-47cd-af4a-851f85e8d2c9" height=380>
 <img src="https://github.com/hisprofile/blenderstuff/assets/41131633/e9ce1d68-58c4-4d57-a2cc-8c00ac5b4bd7" height=380>
+
+## Features
+- Adjustable teleporter field through slider
+- Adjustable teleporter charge through slider
+- Togglable sapper and sapper outline through slider
+- Building animations
+  - Done through dragging a slider
+- Togglable teleporter arrow (Entrance only)
+- Two ways of animating teleporter
+- Self-animated teleporter rings. Properties such as ring count and speed can be adjusted in the modifier panel. `Teleporter Field` must be activated.
+  1. Nonlinear Animation Editor
+      - Actions named `Recharge Lvl. 1/2/3`, `running`, `SpinDown` and `SpinUp` can be added to the teleporter's rig to animate the teleporter. This method is FPS locked and the speed will vary.
+       <img src="https://github.com/hisprofile/blenderstuff/assets/41131633/0027d087-168d-477b-815b-0e6b42a03c44" height=200>
+       <img src="https://github.com/hisprofile/blenderstuff/assets/41131633/6382d745-ab2f-4d09-86ab-5296ff10efdc" height=200>
+  2. Geometry Nodes, Procedurally (Recommended)  
+      <img src="https://github.com/hisprofile/blenderstuff/assets/41131633/f47ee869-f0dd-4fcf-bc84-5caf5f087f40" height=250>  
+
+      - A geometry node group named `Teleporter Procedural Spin` has been added to spin the top of the teleporter. This method is not FPS locked and speed will remain constant. This method is recommended as the spinning behavior is similar to the game. Adjusting speed is done through `User-Defined Speed` or `Preset Speed`. `Preset Speed` has six different speed options available.
+
+        The transitioning between differing speeds can be adjusted through `Transition Mix`.
