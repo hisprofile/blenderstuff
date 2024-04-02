@@ -1,4 +1,4 @@
-# [Proximity Lights - Geometry Nodes](https://github.com/hisprofile/blenderstuff/raw/main/Tools/Proximity%20Lights%20-%20Geometry%20Nodes/geonodes_proxlights.blend)
+# [Proximity Lights - Geometry Nodes](https://github.com/hisprofile/blenderstuff/raw/main/Tools/Proximity%20Lights%20-%20Geometry%20Nodes/geonodes_proxlights.blend) (Download)
 This is a geometry nodes version of my tool, `Proximity Lights.` It hides lights far away and/or out of view from the camera. This is most useful for EEVEE Legacy, but I'd imagine you'd find use for this in Cycles and EEVEE-Next.
 
 4.1+ only.
