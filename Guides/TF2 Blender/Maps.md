@@ -17,7 +17,8 @@ EEVEE's light limit is hardcapped at 127 due to technical limitations. This is a
 Use the addon as instructed
 
 ### Method 2
-Use geometry nodes. will add more info later
+Use geometry nodes.
+[Proximity Lights - Geometry Nodes Version](https://github.com/hisprofile/blenderstuff/blob/main/Tools/Proximity%20Lights%20-%20Geometry%20Nodes/Documentation.md)
 
 ## Prop(er) Skins  
 A lot of props have different ["skins"](https://developer.valvesoftware.com/wiki/Skin), so you can use lots of different materials on the same prop. When you import a material through [SourceIO](https://github.com/REDxEYE/SourceIO) or [Plumber](https://github.com/lasa01/Plumber), these props will **always** have their default skin, which isn't good if you're looking for 1:1 representation.
