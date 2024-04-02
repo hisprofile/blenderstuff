@@ -15,7 +15,7 @@ Sentries are now fun to use and animate. Instead of rotating them towards a targ
   - Muzzle flashes are rigged by dragging a slider shaped like a cone from left to right. The muzzle flashes are adjustable in width, length, and particle count, and can be adjusted when selecting the muzzle flashes.
 - Togglable sappers and sapper outlines through sliders
 - Dimmed shield and togglable laser through wrangler slider
-  - Shield particle properties can be adjusted in the modifier panel.  
+  - Shield particle properties can be adjusted in the modifier panel. Activate wrangler to show shield to be able to select the shield.  
     <img src="https://github.com/hisprofile/blenderstuff/assets/41131633/484099b8-909f-4b5e-baa2-187d3c067b49" height=300>  
 - Firing animations
 - No Ammo animations
