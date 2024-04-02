@@ -38,6 +38,12 @@ ThatLazyArtist's rigs take a more traditional path towards rigged face posing, b
 <img src="https://github.com/hisprofile/blenderstuff/assets/41131633/212fbaf8-d271-43cf-87d0-4f12143b63b1" width=600>  
 To activate the panel, flick open on the switch above the head.
 
+## Legacy Rigs
+All rig-sets contain a legacy rig, comprised entirely of Forward Kinematics. These rigs are used for importing animations onto.  
+
+<img src="https://github.com/hisprofile/blenderstuff/assets/41131633/41ab8400-5cc7-4020-bbc2-66de69412023" height=400>
+
+There are not recommended for animating <ins>**at all.**</ins>
 # Features  
 - All rigs have wrinkle maps to add details to the face.[^1]
 - hisanimations' and ThatLazyArtist's rigs have shapekeys along with flex controllers to pose the face. This is a single slider solution to creating mouth shapes. These rigs are compatible with facial cosmetics.[^2]
