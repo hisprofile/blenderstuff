@@ -13,10 +13,10 @@ This feature is more useful to EEVEE.
 EEVEE's light limit is hardcapped at 127 due to technical limitations. This is a problem, as most of the maps exceed that light limit. The solution to this is an addon that disables lights when too far from the active camera, a distance threshold determined by the user. This is updated every frame.  
 [Proximity Lights documentation](https://github.com/hisprofile/ProximityLights/blob/main/README.md)
 
-### Optimizing lights: Method 1
+### Optimizing lights: Method 1 (Slower, more flexible)
 Use the addon as instructed
 
-### Method 2
+### Method 2 (Faster, less flexible)
 Use geometry nodes.
 [Proximity Lights - Geometry Nodes Version](https://github.com/hisprofile/blenderstuff/blob/main/Tools/Proximity%20Lights%20-%20Geometry%20Nodes/Documentation.md)
 
