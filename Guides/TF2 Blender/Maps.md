@@ -20,9 +20,23 @@ Use the addon as instructed
 Use geometry nodes. will add more info later
 
 ## Prop(er) Skins  
-A lot of props have different "skins", so you can use lots of different materials on the same prop. When you import a material through [SourceIO](https://github.com/REDxEYE/SourceIO) or [Plumber](https://github.com/lasa01/Plumber), these props will **always** have their default skin, which isn't good if you're looking for 1:1 representation.
+A lot of props have different ["skins"](https://developer.valvesoftware.com/wiki/Skin), so you can use lots of different materials on the same prop. When you import a material through [SourceIO](https://github.com/REDxEYE/SourceIO) or [Plumber](https://github.com/lasa01/Plumber), these props will **always** have their default skin, which isn't good if you're looking for 1:1 representation.
 
 In the TF2 Map Pack, EVERY prop has their correct skin as mentioned in the map files.[^1]
+
+Reference  
+<img src="https://github.com/hisprofile/blenderstuff/assets/41131633/fd56dc95-c2ac-4c6f-aec7-237f0c5d7d48" width=50%>
+
+TF2 Map Pack  
+<img src="https://github.com/hisprofile/blenderstuff/assets/41131633/c25b42f9-6195-4afe-99ac-1f53d83a0aba" width=50%>  
+[Cycles Render 2](https://github.com/hisprofile/blenderstuff/assets/41131633/9ce6e0e3-c439-49fa-af4f-e0b10dc56bf6)  
+[EEVEE Legacy Render](https://github.com/hisprofile/blenderstuff/assets/41131633/7a4cbf30-921d-4adc-9e74-a77cdcd67d4d)  
+
+[SourceIO](https://github.com/REDxEYE/SourceIO)  
+<img src="https://github.com/hisprofile/blenderstuff/assets/41131633/d1b7d31d-9404-49ae-a529-55c5444146a4" width=50%>
+
+[Plumber](https://github.com/lasa01/Plumber)  
+<img src="https://github.com/hisprofile/blenderstuff/assets/41131633/c42a1a0a-b7b5-428a-969a-9ce380186bc9" width=50%>
 
 ## Texture Scrolling
 Objects like waterfalls or materials like lava support texture scrolling, making them less static. The speed at which they scroll is constant across framerates. You can adjust the speed at which they scroll in the modifier panel.
@@ -30,7 +44,7 @@ Objects like waterfalls or materials like lava support texture scrolling, making
 ## A LOT of Space Saved.  
 Yes, it's true. You *could* port the maps yourself given the right tools and addon. However, no addon out there uses space-saving techniques that the map pack uses. 
 - All textures are saved in PNG
-  - The alternative is .tga, which cannot be easily compressed. Because .png has lossless compression, it's a no brainer which texture format should be used.
+  - The alternative is .tga, which cannot be easily compressed. Because .png has lossless compression, it's a no brainer which texture format should be used.[^1]
 - Models, materials, and textures are re-used.
   - There are two archives every map relies on: _props.blend and _materials.blend
     - _props.blend contains every prop in TF2's game files, along the materials and textures the props use.
@@ -40,4 +54,5 @@ Without optimizations, the map pack would stand at 170+gb. With all the optimiza
 [TF2 Map Pack spec sheet](https://drive.google.com/file/d/1WwQ4-EDfTMbCfevu-W5o_vTkZIl8iEFS/view)
 
 # The Disadvantages
-## 
+## Difficult to edit
+Because most of the assets (models, materials) in each map are linked/reused from other .blend files, the only way to alter an asset is to localize its datablock by clicking the chain icon.
