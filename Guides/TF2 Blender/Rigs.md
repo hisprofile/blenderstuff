@@ -1,4 +1,4 @@
-# Rigs  
+# [Rigs](https://drive.google.com/drive/u/1/folders/1DF6S3lmqA8xtIMflWhzV242OrUnP62ws)  
 There are three official rig-sets usable by the TF2-Trifecta. They are referred to after the name of their creators.  
 
 At their core, every single rig functions the same as they use Rigify for controls. The rigs were specially built to maintain the original bone orientations of their decompiled rigs, making cosmetic attachments possible. Other than that, you can learn how Rigify works by reading [Rigify's documentation](https://docs.blender.org/manual/en/latest/addons/rigging/rigify/index.html). What's worth mentioning is that you can alter the rig in the `Item` tab in Blender's viewport. Selecting different bones will show different properties through which you can manipulate the rig.
