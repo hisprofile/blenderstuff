@@ -1,4 +1,4 @@
-# Installing the TF2-Trifecta
+# [Installing the TF2-Trifecta](https://github.com/hisprofile/TF2-Trifecta/releases)
 After downloading the [latest version](https://github.com/hisprofile/TF2-Trifecta/releases) of the addon (Don't extract!), you'll want to head towards Blender's preferences by going to `Edit -> Preferences -> Add-ons -> Install...` to install it into Blender.  
 
 Locate the newly downloaded .zip file, select it and choose `Install Add-on`. In a moment's notice, the TF2-Trifecta will be installed into Blender. Now, the only thing left is to install the assets used by `Wardrobe` and `Merc-Deployer.`
