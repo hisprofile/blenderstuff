@@ -1,5 +1,5 @@
-# Medi-Beam
-The Medigun beam effect, recreated in Blender using geometry nodes with all the parameters you would need. 
+# [Medi-Beam](https://github.com/hisprofile/blenderstuff/raw/main/Creations/Medi-Beam%20Effect.blend)
+[The Medigun beam effect (download)](https://github.com/hisprofile/blenderstuff/raw/main/Creations/Medi-Beam%20Effect.blend), recreated in Blender using geometry nodes with all the parameters you would need. 
 
 I recommend using empties as the start and end points. The beam will follow the Z axis of the points for a curve. You can scale an object to change the shape of the curve, so if you want it to be flat, scale the object to 0 on the Z axis. 
 
