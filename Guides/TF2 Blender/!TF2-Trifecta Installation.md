@@ -1,4 +1,6 @@
-# [Installing the TF2-Trifecta](https://github.com/hisprofile/TF2-Trifecta/releases)
+# [Installing the TF2-Trifecta](https://github.com/hisprofile/TF2-Trifecta/releases)  
+The [TF2-Trifecta](https://github.com/hisprofile/TF2-Trifecta/releases) is your best friend when it comes to spawning and clothing mercs, as it handles the rigs and the ported weapons/cosmetics. Appending them yourself sure would be a pain!
+
 After downloading the [latest version](https://github.com/hisprofile/TF2-Trifecta/releases) of the addon (Don't extract!), you'll want to head towards Blender's preferences by going to `Edit -> Preferences -> Add-ons -> Install...` to install it into Blender.  
 
 Locate the newly downloaded .zip file, select it and choose `Install Add-on`. In a moment's notice, the TF2-Trifecta will be installed into Blender. Now, the only thing left is to install the assets used by `Wardrobe` and `Merc-Deployer.`
@@ -8,7 +10,7 @@ Locate the newly downloaded .zip file, select it and choose `Install Add-on`. In
 > Requires 4GB of free space!
 
 > [!IMPORTANT]
-> Both methods use Google Drive to download from, as I don't know of any straight forward, cheap file hosting services. If you know of one that requires no API to download from, then don't hesitate to reach out. If you are being withheld from downloading by a rate limiter, then you have my sincerest apologies. I have no alternatives.
+> Both methods use Google Drive to download from as I don't know of any straight forward, cheap file hosting services. If you know of one that requires no API to download from, then don't hesitate to reach out. If you are being withheld from downloading by a rate limiter, then you have my sincerest apologies. I have no alternatives.
 
 ## Method #1
 The easiest way to install the assets is by going into the `Scene Properties` and using the `Install TF2 Collection` feature with `Include Rigs` enabled. Set the installation path to an empty folder and begin.  
