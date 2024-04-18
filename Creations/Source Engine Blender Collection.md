@@ -20,6 +20,8 @@ To install an archive of the Source Engine Blender Collection, you must first al
 
 To download the actual content, download the `_materials` and `_models` folders. I don't recommend downloading the entirety of the maps at once, so just make a folder named `_maps` and download the maps you need or want when you need or want them.
 
+To add the archive as an asset library for Blender, head to `Edit > Preferences > File Paths > Asset Libraries` and add the archive folder.
+
 # [Counter Strike: Source](https://drive.google.com/drive/folders/1of8KW9hoPiAwLG7pJjXT6tauQFlWrL9S?usp=sharing)
 Download ^
 
