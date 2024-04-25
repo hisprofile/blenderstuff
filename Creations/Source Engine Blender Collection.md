@@ -18,7 +18,7 @@ Look for an empty object labelled "sky_camera." Around this empty should be lots
 ## Installation Instructions  
 To install an archive of the Source Engine Blender Collection, you must first allocate a folder for a game collection. Then, download `_resources.blend` and `blender_assets.cats.txt`. `_resources.blend` is required regardless of what you decide to download. It serves as a resource pack for the models and materials to reuse data from. `blender_assets.cats.txt` is required for Blender's asset library functionality, allowing you to add the allocated folder as an asset library.
 
-To download the actual content, download the `_materials` and `_models` folders. I don't recommend downloading the entirety of the maps at once, so just make a folder named `_maps` and download the maps you need or want when you need or want them.
+To download the actual content, download the `_materials` and `_models` folders. Download the `_actions` folder if you wish for animations. I don't recommend downloading the entirety of the maps at once, so just make a folder named `_maps` and download the maps you need or want when you need or want them.
 
 To add the archive as an asset library for Blender, head to `Edit > Preferences > File Paths > Asset Libraries` and add the archive folder.
 
@@ -26,8 +26,9 @@ To add the archive as an asset library for Blender, head to `Edit > Preferences 
 Download ^
 
 # [Counter Strike: Global Offensive](https://drive.google.com/drive/folders/1CTBdu8VhvBP767WJZb9_d4xO8EjBP51F?usp=sharing)
-Download ^
-Error: Folder is currently named "porting tools," will fix later
+A ported archive of most CS:GO's models, materials, and maps. Resulting in a **massive** 20GB download. If you download this, I salute you.
+
+I'll give an exact count of the number of models and materials that exist, but for the time being, I'm sure it's well over 10000 models. 
 
 # [Portal 2](https://drive.google.com/drive/folders/1lzXtGsDhARhL_Y90Bn_HngGfjXk5Ngpo)
 ## Tips
