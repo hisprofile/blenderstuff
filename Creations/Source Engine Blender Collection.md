@@ -66,6 +66,8 @@ Once you have prepared all the assets you want to port, install hisanimations' v
 
 Before you actually start porting any of the tools, I **HIGHLY** recommend that you keep the console open to view progress and check for any errors, such as whether textures or materials can be found or not.
 ## _models_porter.blend (Step 1)
+<img src="https://github.com/hisprofile/blenderstuff/assets/41131633/960026fc-40be-44e6-8b89-fdbc0dcd27fe" height=300>  
+
 Open `_models_porter.blend` and set the `models/ Folder` path to the `models` folder you want to port from. Set `Asset Folder Save Path` to where you want the models to be saved. `//` means it will be saved alongside `_models_porter.blend` (recommended). Hit `Create Catalogs` for creating the asset library, then click `Start Batch Job` to port the models. Two files and two folders will be created. `_mapper_models.json`, `_mapper_materials.json`, `_models` and `_actions`. The two .json files serve as directions for porting the maps. They are used to check if an asset already exists, and if it does, it will return the `.blend` file it is located in and what it is known as. Hopefully within an hour, the porting tool will have ported all of the models and saved them as `.blend` files.
 
 ## _materials_porter.blend (Step 2)
