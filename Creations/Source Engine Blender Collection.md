@@ -52,6 +52,7 @@ Prop `props/wall_emitter` has a geometry nodes effect linked as a custom propert
 
 # Source to Blender Porting Tools - hisanimations
 [Porting Tools .zip](https://github.com/hisprofile/blenderstuff/raw/main/Creations/source_blender_porting_tools.zip)
+[Modified Addons](https://github.com/hisprofile/blenderstuff/blob/main/Creations/modified_addons.zip)
 
 This is a set of porting tools to build an asset library of all models and materials of a source game for Blender. This asset library will then be used for the maps to reuse data, significantly lowering the size of the maps. When all is said and done, you should have a complete archive of the game you are trying to port.
 
