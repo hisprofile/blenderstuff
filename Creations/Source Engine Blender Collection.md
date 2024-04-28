@@ -51,7 +51,7 @@ To download the actual content, download the `_materials` and `_models` folders.
 To add the archive as an asset library for Blender, head to `Edit > Preferences > File Paths > Asset Libraries` and add the archive folder.
 
 # [Counter Strike: Source](https://drive.google.com/drive/folders/1of8KW9hoPiAwLG7pJjXT6tauQFlWrL9S?usp=sharing)
-Download ^
+A ported archive of 3,519 models and 9,034 materials (6,817 usable out of asset library).
 
 # [Counter Strike: Global Offensive](https://drive.google.com/drive/folders/1CTBdu8VhvBP767WJZb9_d4xO8EjBP51F?usp=sharing)
 A ported archive of most CS:GO's models, materials, and maps. Resulting in a **massive** 20GB download. If you download this, I salute you.
