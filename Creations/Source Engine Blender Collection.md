@@ -17,6 +17,12 @@ Overlays in the map usually have clipping issues, which can make a render look r
 
 ![image](https://github.com/hisprofile/blenderstuff/assets/41131633/7fc3d3c5-9179-4301-9b11-2efe47ce1473)
 
+### Delete Materials from Faces
+Tons of unneeded materials such as `toolsnodraw` and `toolsblack` can pollute a file with unneeded geometry. Despite not being visible in EEVEE, they can produce visual errors in Cycles through Z-fighting. Deleting this geometry through a node group is a fast solution, and is applied to every object of a collection by batch. Set the material you wish to be deleted and click `Delete Material`. `Remove "Delete Material" Node Group` will delete every node group targeted the selected material. Shift clicking this operator will delete every node group regardless of material.
+
+![image](https://github.com/hisprofile/blenderstuff/assets/41131633/f5c95f7a-a920-43d7-8268-57345454ce52)
+
+
 ### Proximity Lights  
 
 <img src="https://github.com/hisprofile/blenderstuff/assets/41131633/01cdc3fd-0c16-4599-b417-0f6425633a56" width=30%>  
@@ -51,12 +57,13 @@ To download the actual content, download the `_materials` and `_models` folders.
 To add the archive as an asset library for Blender, head to `Edit > Preferences > File Paths > Asset Libraries` and add the archive folder.
 
 # [Counter Strike: Source](https://drive.google.com/drive/folders/1of8KW9hoPiAwLG7pJjXT6tauQFlWrL9S?usp=sharing)
-A ported archive of 3,519 models and 9,034 materials (6,817 usable out of asset library).
+A ported archive of CS:S's assets, resulting in 3,519 models, 9,034 materials (6,817 usable out of asset library) and 20 maps. Totaling 2.66 GB
 
 # [Counter Strike: Global Offensive](https://drive.google.com/drive/folders/1CTBdu8VhvBP767WJZb9_d4xO8EjBP51F?usp=sharing)
-A ported archive of most CS:GO's models, materials, and maps. Resulting in a **massive** 20GB download. If you download this, I salute you.
+A ported archive of CS:GO's assets, resulting in **23,504** models, **28,928** materials (19,078 usable out of asset library) and 89 maps. Totalling 18.2 GB. If you download all of this, I salute you.
 
-I'll give an exact count of the number of models and materials that exist, but for the time being, I'm sure it's well over 10000 models. 
+# [Team Fortress 2](https://drive.google.com/drive/folders/10IZLq5VTM1S2B3D4UBdXLMO0tuZC8jq7)
+A ported archive of Team Fortress 2's assets, resulting in 7,627 models, 16,602 materials (10,055 usable out of asset library). Maps have not been completed at the time of writing. Total file size ATM is 7.5gb.
 
 # [Portal 2](https://drive.google.com/drive/folders/1lzXtGsDhARhL_Y90Bn_HngGfjXk5Ngpo)
 ## Tips
@@ -97,5 +104,9 @@ Open `_materials_porter.blend` and set the `materials/ Folder` path to the `mate
 
 ## _maps_porter.blend (Step 3)
 Set `.VMF Maps Folder` to the folder containing all of the decompiled maps. Set `.BSP Maps Path` to the folder containing all of the `.bsp` versions of the maps. Set `Asset Folder Save Path` to where you want the models to be saved. `//` means it will be saved alongside `_maps_porter.blend`. Set `Game Folder` to the game folder. This folder should have the `models` and `materials` folder under it. Set `Games:` to the game you are attempting to port from. Once ready, hit `Start Batch Porting`.
+
+# Credits
+[Plumber](https://github.com/lasa01/Plumber/releases) - Maps, animations  
+[SourceIO](https://github.com/REDxEYE/SourceIO/releases) - Models, materials, ropes
 
 ##### [Plumber by lasa01](https://github.com/lasa01/Plumber/releases), [SourceIO by REDxEYE](https://github.com/REDxEYE/SourceIO/releases)
