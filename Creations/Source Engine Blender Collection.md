@@ -39,6 +39,58 @@ Use the addon as instructed
 Use geometry nodes.
 [Proximity Lights - Geometry Nodes Version](https://github.com/hisprofile/blenderstuff/blob/main/Tools/Proximity%20Lights%20-%20Geometry%20Nodes/Documentation.md)
 
+### Extensions
+Every good project should have a way for users to mod it, and so I introduce extension loader! A non-destructive way for users to add their own scripts. Upon loading a map, the .blend file will check if a folder named `_extensions` exists in the archive root directory. If it does, it will go through all .py files under the folder and load them. It should be structured like a regular Blender addon, sans any code executing a register function.
+
+Example:
+<details>
+  <summary>Extension example</summary>
+
+  ```py
+import bpy
+
+from bpy.types import Operator, Panel
+
+class MAPPACK_subpanel(bpy.types.Panel):
+    bl_space_type = 'VIEW_3D'
+    bl_region_type = 'UI'
+    bl_context = ''
+    bl_category = 'Tool'
+    bl_parent_id = 'MAPPACK_PT_panel'
+    bl_options = {'DEFAULT_CLOSED'}
+    
+class MAPPACK_OT_open_drive(Operator):
+    bl_idname = 'port.open_drive_link'
+    bl_label = 'Open Google Drive Folder'
+    bl_description = 'Open the link to the Google Drive folder for this archive'
+    
+    def execute(self, context):
+        bpy.ops.wm.url_open(url='https://drive.google.com/open?id=10IZLq5VTM1S2B3D4UBdXLMO0tuZC8jq7&usp=drive_fs')
+        return {'FINISHED'}
+
+class MAPPACK_PT_drive_panel(MAPPACK_subpanel):
+    bl_label = 'Drive Folder'
+    
+    def draw(self, context):
+        layout = self.layout
+        layout.operator('port.open_drive_link')
+
+classes = [
+    MAPPACK_OT_open_drive,
+    MAPPACK_PT_drive_panel
+]
+    
+def register(a=None, b=None):
+    for i in classes:
+        bpy.utils.register_class(i)
+
+def unregister(a=None, b=None):
+    for i in reversed(classes):
+        bpy.utils.unregister_class(i)
+```
+  
+</details>
+
 ## Tips
 ### Fixing Skybox  
 Look for an empty object labelled "sky_camera." Around this empty should be lots of little pieces of meshes. Select the `sky_camera` object first, then box select (B) the surrounding objects. However, if you see the enitre map mesh is highlighted, then you need to enter `Edit Mode` on the world mesh labelled "worldspawn". Select the mesh surrounding the empty with the box select tool then separate it (P, Separate selection). Enter `Object Mode`, select the `sky_camera`, box select the surrounding mesh, then go to the `Object tab > Transform VMF 3D Sky`. If the entire map moves with the `sky_camera` object, that means you did not separate all of the mesh around the empty, or you accidentally had it selected while transforming the 3D sky.
