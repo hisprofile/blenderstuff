@@ -118,18 +118,29 @@ Depending on how you choose to download the archive, your installation may be di
 To add the archive as an asset library for Blender, head to `Edit > Preferences > File Paths > Asset Libraries` and add the archive folder.
 
 # [Counter Strike: Source](https://drive.google.com/drive/folders/1of8KW9hoPiAwLG7pJjXT6tauQFlWrL9S?usp=sharing)
-A ported archive of CS:S's assets, resulting in 3,519 models, 9,034 materials (6,817 usable out of asset library) and 20 maps. Totaling 2.66 GB
+A ported archive of CS:S's assets, resulting in 3,519 models, 9,034 materials (6,817 usable out of asset library) and 20 maps. Totaling 2.66 GB/
 
 # [Counter Strike: Global Offensive](https://drive.google.com/drive/folders/1CTBdu8VhvBP767WJZb9_d4xO8EjBP51F?usp=sharing)
 A ported archive of CS:GO's assets, resulting in **23,504** models, **28,928** materials (19,078 usable out of asset library) and 89 maps. Totalling 18.2 GB. If you download all of this, I salute you.
 
+# [Day of Defeat: Source](https://drive.google.com/open?id=1h-DnOF7lrogJayxH2rrqnO0VPs9MscU6&usp=drive_fs)
+A ported archive of Day of Defeat: Source's assets, resulting in 691 models, 1,673 materials (602 usable out of asset library) and nine maps. Totalling 839.84 MB.
+
 # [Half-Life: 2](https://drive.google.com/open?id=1OWx390SGmthg1sLOQwW_6X0YWyWVxnS7&usp=drive_fs)
 A ported archive of Half-Life: 2's assets, resulting in 3,217 models, 6,791 materials (4968 usable out of asset library) and 118 maps. Totalling 2.09 GB. Half-Life 2: Episode One and Two are included.
 
-# [Team Fortress 2](https://drive.google.com/drive/folders/10IZLq5VTM1S2B3D4UBdXLMO0tuZC8jq7)
-A ported archive of Team Fortress 2's assets, resulting in 7,627 models, 16,602 materials (10,055 usable out of asset library). Maps have not been completed at the time of writing. Total file size ATM is 7.5gb.
+# [Left 4 Dead 1/2](https://drive.google.com/open?id=1Xymp5cf11V5edquQu5tdwxxVPU3FxNEU&usp=drive_fs)
+A ported archive of Left 4 Dead 2's assets, resulting in 5,497 models, 8,165 materials (4,999 usable out of asset library) and 60 maps. Totalling 4.45 GB/
+
+# [Portal](https://drive.google.com/open?id=15Pig2xn_8GHnraw3bsDN0o50dfnbb1qs&usp=drive_fs)
+A ported archive of Portal's assets, resulting in 316 models, 504 materials (269 usable out of asset library) and 26 maps. Totalling 220.07 MB.
 
 # [Portal 2](https://drive.google.com/drive/folders/1lzXtGsDhARhL_Y90Bn_HngGfjXk5Ngpo)
+A ported archive of Portal 2's assets, resulting in 2,216 models, 3,629 materials (2,521 usable out of asset library) and 116 maps. Totalling 1.99 GB.
+
+<details>
+<summary>Tips</summary>
+
 ## Tips
 ### 4Panels
 It seems that panel arms (I don't know what they're called) don't move the panel they are attached to automatically. It seems the solution is to close it using its close action, select the panel, then parent it to one of the moving bones. `props_ingame/arm_4panel/@ramp_90_deg_close` seems to work.  
@@ -137,11 +148,15 @@ It seems that panel arms (I don't know what they're called) don't move the panel
 <img src="https://github.com/hisprofile/blenderstuff/assets/41131633/d7381a85-3479-4a28-8377-794067c04bb8" width=40%>
 <img src="https://github.com/hisprofile/blenderstuff/assets/41131633/e316b170-01d4-498c-9647-200096bb6380" width=40%>
 <img src="https://github.com/hisprofile/blenderstuff/assets/41131633/aeaa8f3e-5c67-4164-81cb-d643e291f499" width=40%>
+</details>
 
 ## Effects
 ### Hard Light Bridge
 Prop `props/wall_emitter` has a geometry nodes effect linked as a custom property. To use it, add a geometry nodes group and set the node group to `Hard Light Bridge`  
 <img src="https://github.com/hisprofile/blenderstuff/assets/41131633/0510ea5d-c192-4a04-9890-d6086b1d4094">
+
+# [Team Fortress 2](https://drive.google.com/drive/folders/10IZLq5VTM1S2B3D4UBdXLMO0tuZC8jq7)
+A ported archive of Team Fortress 2's assets, resulting in 7,627 models, 16,602 materials (10,055 usable out of asset library) and 185 maps. Totalling 7.55 GB
 
 # Source to Blender Porting Tools - hisanimations
 [Porting Tools .zip](https://github.com/hisprofile/blenderstuff/raw/main/Creations/source_blender_porting_tools.zip)  
@@ -169,8 +184,13 @@ Open `_materials_porter.blend` and set the `materials/ Folder` path to the `mate
 ## _maps_porter.blend (Step 3)
 Set `.VMF Maps Folder` to the folder containing all of the decompiled maps. Set `.BSP Maps Path` to the folder containing all of the `.bsp` versions of the maps. Set `Asset Folder Save Path` to where you want the models to be saved. `//` means it will be saved alongside `_maps_porter.blend`. Set `Game Folder` to the game folder. This folder should have the `models` and `materials` folder under it. Set `Games:` to the game you are attempting to port from. Once ready, hit `Start Batch Porting`.
 
+# To-Do
+- Fix decals to be fog compatible
+- Port and rig SFM version of L4D2 survivors
+- Port and rig Chell
+
 # Credits
-[Plumber](https://github.com/lasa01/Plumber/releases) - Maps, animations  
+[Plumber](https://github.com/lasa01/Plumber/releases) - Maps, animations
 [SourceIO](https://github.com/REDxEYE/SourceIO/releases) - Models, materials, ropes
 
 ##### [Plumber by lasa01](https://github.com/lasa01/Plumber/releases), [SourceIO by REDxEYE](https://github.com/REDxEYE/SourceIO/releases)
