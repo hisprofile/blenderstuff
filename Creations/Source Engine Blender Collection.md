@@ -106,6 +106,15 @@ To install an archive of the Source Engine Blender Collection, you must first al
 
 To download the actual content, download the `_materials` and `_models` folders. Download the `_actions` folder if you wish for animations. I don't recommend downloading the entirety of the maps at once, so just make a folder named `_maps` and download the maps you need or want when you need or want them.
 
+If you plan to download all of the files at once, chances are the .zip files will be split into multiple pieces. Extracting it is a matter of selecting all of the zip files and extracting them all. All of the files will be merged into a complete piece.
+
+![image](https://github.com/hisprofile/blenderstuff/assets/41131633/31a7ad0c-71e8-49db-8e18-6123a34cf2f6)
+
+A downloaded and extracted archive should look like this:
+![image](https://github.com/hisprofile/blenderstuff/assets/41131633/7b4889dd-bece-46a5-88c0-5f1dd7a37014)
+
+Depending on how you choose to download the archive, your installation may be different.
+
 To add the archive as an asset library for Blender, head to `Edit > Preferences > File Paths > Asset Libraries` and add the archive folder.
 
 # [Counter Strike: Source](https://drive.google.com/drive/folders/1of8KW9hoPiAwLG7pJjXT6tauQFlWrL9S?usp=sharing)
@@ -113,6 +122,9 @@ A ported archive of CS:S's assets, resulting in 3,519 models, 9,034 materials (6
 
 # [Counter Strike: Global Offensive](https://drive.google.com/drive/folders/1CTBdu8VhvBP767WJZb9_d4xO8EjBP51F?usp=sharing)
 A ported archive of CS:GO's assets, resulting in **23,504** models, **28,928** materials (19,078 usable out of asset library) and 89 maps. Totalling 18.2 GB. If you download all of this, I salute you.
+
+# [Half-Life: 2](https://drive.google.com/open?id=1OWx390SGmthg1sLOQwW_6X0YWyWVxnS7&usp=drive_fs)
+A ported archive of Half-Life: 2's assets, resulting in 3,217 models, 6,791 materials (4968 usable out of asset library) and 118 maps. Totalling 2.09 GB. Half-Life 2: Episode One and Two are included.
 
 # [Team Fortress 2](https://drive.google.com/drive/folders/10IZLq5VTM1S2B3D4UBdXLMO0tuZC8jq7)
 A ported archive of Team Fortress 2's assets, resulting in 7,627 models, 16,602 materials (10,055 usable out of asset library). Maps have not been completed at the time of writing. Total file size ATM is 7.5gb.
