@@ -130,7 +130,10 @@ A ported archive of Day of Defeat: Source's assets, resulting in 691 models, 1,6
 A ported archive of Half-Life: 2's assets, resulting in 3,217 models, 6,791 materials (4968 usable out of asset library) and 118 maps. Totalling 2.09 GB. Half-Life 2: Episode One and Two are included.
 
 # [Left 4 Dead 1/2](https://drive.google.com/open?id=1Xymp5cf11V5edquQu5tdwxxVPU3FxNEU&usp=drive_fs)
-A ported archive of Left 4 Dead 2's assets, resulting in 5,497 models, 8,165 materials (4,999 usable out of asset library) and 60 maps. Totalling 4.45 GB/
+A ported archive of Left 4 Dead 2's assets, resulting in 5,497 models, 8,165 materials (4,999 usable out of asset library) and 60 maps. Totalling 4.45 GB
+
+## Credits
+Syborg64 - Helped with infected shader
 
 # [Portal](https://drive.google.com/open?id=15Pig2xn_8GHnraw3bsDN0o50dfnbb1qs&usp=drive_fs)
 A ported archive of Portal's assets, resulting in 316 models, 504 materials (269 usable out of asset library) and 26 maps. Totalling 220.07 MB.
@@ -154,6 +157,9 @@ It seems that panel arms (I don't know what they're called) don't move the panel
 ### Hard Light Bridge
 Prop `props/wall_emitter` has a geometry nodes effect linked as a custom property. To use it, add a geometry nodes group and set the node group to `Hard Light Bridge`  
 <img src="https://github.com/hisprofile/blenderstuff/assets/41131633/0510ea5d-c192-4a04-9890-d6086b1d4094">
+
+## Credits
+[Lil' Boneless Pizza](https://twitter.com/lilnobonepizza) - Helped with the Flowmap shader
 
 # [Team Fortress 2](https://drive.google.com/drive/folders/10IZLq5VTM1S2B3D4UBdXLMO0tuZC8jq7)
 A ported archive of Team Fortress 2's assets, resulting in 7,627 models, 16,602 materials (10,055 usable out of asset library) and 185 maps. Totalling 7.55 GB
