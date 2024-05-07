@@ -1,18 +1,13 @@
 # Source Engine Blender Collection
-Welcome to the **Source Engine Blender Collection!** A Blender archive of **45,000+** models, **45,000+** materials, and **550+** maps ported from eight of Valve's Source games! These ports were made with optimization and efficiency in mind, while catering to ease of usability. Below, you will find the installation instructions, download links for the eight archives, and general tips you may find useful. I've jam-packed this with features and nifty tricks, so this is definitely worth a read!
+Welcome to the **Source Engine Blender Collection!** A Blender archive of **45,000+** models, **45,000+** materials, and **550+** maps ported from eight of Valve's Source games! These ports were made with optimization and efficiency in mind, while catering to ease of usability. Below, you will find the installation instructions, download links for the eight archives, and general tips you may find useful. I've jam-packed this with features and nifty tricks, so this is definitely worth a read! If you're interested in the process, that is at the bottom of this document.
+
+Unfortunately I do not have the luxuries of preparing a professional website for this, so hopefully Github's markdown is satisfactory!
 
 ## What's included?
-Each model 
-
-The Source Engine Blender Collection is an asset library of models, materials and maps from Valve's Source games ported to Blender with efficiency and optimization in mind. Third party games are planned.
-
-The Source Engine Blender Collection is a collection of archives of ports from eight of Valve's Source engine games, retaining the highest quality possible. These archives can be used as asset libraries to drag and drop models or materials from. 
-
-If you're wondering how optimizations are done, it's not as simple as drag and drop. That'd just be lazy. I first create a set of asset libraries made for the maps to link from, so they don't have duplicate assets. These asset libraries also serve as *actual* asset libraries for Blender, instead of just for the maps, allowing users to drag and drop assets from the game.
-
-Models and maps are both ported with SourceIO and Plumber, to get the best out of both worlds. In the models' case, SourceIO is used for porting .mdl files and for its BVLG shader. Plumber is used for animations. In the maps' case, SourceIO is used for its ropes, and Plumber is used to port the actual map.
-
-Once the maps are ported, they go through a process of going through every mesh and material to see if they already exist in the pre-existing libraries. If they do, then use the existing asset. If they don't, then do nothing. This allows for a massive downsizing operation that is just incomparable to importing maps without any optimizations. .EXR files from maps are converted to DWAA format to save as much space as possible with little compromise to quality.
+- Each model should have their included skins and animations
+- Self-shadowing bump maps converted to Normal Maps
+- Maps that have been thoroughly optimized
+- Asset library support for models and materials
 
 ## Map Extras
 ### Fog
@@ -23,7 +18,6 @@ Tons of Source games use a fog effect in their gameplay, and fortunately that sh
 Overlays in the map usually have clipping issues, which can make a render look really ugly upon a render. In the `Map Extras` tab lies a panel named `Overlays Offset`. You can randomize the offset in case of overlays overlapping each other, or in case the overlays are clipping into a map. `Decal Collection` can be set for a custom set of meshes to fix. If left empty, it will fix all overlays in the `overlays` collection by default. When ready, click `Offset Overlays`. All overlays will be offset by their normal scaled by the inputted sizes.
 
 <img src="https://github.com/hisprofile/blenderstuff/assets/41131633/1c059439-1d0c-4c8d-b62f-be58c49ac3bd" width=70%>
-
 
 ### Delete Materials from Faces
 Tons of unneeded materials such as `toolsnodraw` and `toolsblack` can pollute a file with unneeded geometry. Despite not being visible in EEVEE, they can produce visual errors in Cycles through Z-fighting. Deleting this geometry through a node group is a fast solution, and is applied to every object of a collection by batch. Set the material you wish to be deleted and click `Delete Material`. `Remove "Delete Material" Node Group` will delete every node group targeted the selected material. Shift clicking this operator will delete every node group regardless of material.
@@ -109,8 +103,14 @@ Here, I am separating the world mesh around the skybox by pressing P. Once separ
 ### Injecting Data
 `_resources.blend` contains two major node groups named `Resources-ShaderN Container` and `Resources-GeoN Container`. These two node groups contain every node group used by the materials, models, and maps. These node groups can have more node groups added inside them. That way, any new node group will be available in any .blend file you open. This makes for extremely easy editing across .blend files, minimizing the amount that would alternatively be needed.
 
-### Opening asset .blend files  
+### Opening Asset .blend Files  
 In the ported map files, you can open the .blend file of any linked prop or material. You can find this under the `Linked Properties` panel of any mesh or material tab. Clicking the operator will open the .blend file, and shift + clicking will reload the .blend file to apply the change. Make sure you save the file first!
+
+### Embedded Animations
+Skeletal meshes will have a custom property named `["actions"]` in its mesh data containing a list of all animations that were able to be imported with the models.
+
+### Fixing Animations
+When using animations outside of maps, skeletons and meshes will appear deformed. This is because the animations are not the same scale as the models outside of the maps,
 
 ## Installation Instructions  
 To install an archive of the Source Engine Blender Collection, you must first allocate a folder for a game collection. Then, download `_resources.blend` and `blender_assets.cats.txt`. `_resources.blend` is required regardless of what you decide to download. It serves as a resource pack for the models and materials to reuse data from. `blender_assets.cats.txt` is required for Blender's asset library functionality, allowing you to add the allocated folder as an asset library.
@@ -180,6 +180,8 @@ Prop `props/wall_emitter` has a geometry nodes effect linked as a custom propert
 
 # [Team Fortress 2](https://drive.google.com/drive/folders/10IZLq5VTM1S2B3D4UBdXLMO0tuZC8jq7)
 A ported archive of Team Fortress 2's assets, resulting in 7,627 models, 16,602 materials (10,055 usable out of asset library) and 185 maps. Totalling 7.55 GB
+
+This port is different from the rest, as everything is scaled at 0.1 scale to accomodate for my [TF2 ports](https://github.com/hisprofile/blenderstuff/tree/main/Guides/TF2%20Blender)
 
 # Source to Blender Porting Tools - hisanimations
 [Porting Tools .zip](https://github.com/hisprofile/blenderstuff/raw/main/Creations/source_blender_porting_tools.zip)  
