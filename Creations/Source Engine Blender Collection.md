@@ -1,13 +1,38 @@
 # Source Engine Blender Collection
-Welcome to the **Source Engine Blender Collection!** A Blender archive of **45,000+** models, **45,000+** materials, and **550+** maps ported from eight of Valve's Source games! These ports were made with optimization and efficiency in mind, while catering to ease of usability. Below, you will find the installation instructions, download links for the eight archives, and general tips you may find useful. I've jam-packed this with features and nifty tricks, so this is definitely worth a read! If you're interested in the process, that is at the bottom of this document.
+![image](https://github.com/hisprofile/blenderstuff/assets/41131633/2c3efb74-8198-4462-b29a-2a41e39e0cd8)
+
+
+Welcome to the **Source Engine Blender Collection!** A Blender archive of **45,000+** models, **45,000+** materials, and **550+** maps ported from eight of Valve's Source games! These ports were made with optimization and efficiency in mind, while catering to ease of usability. Below, you will find the installation instructions, download links for the ported archives, and general tips you may find useful. I've jam-packed this with features and nifty tricks, so this is definitely worth a read! If you're interested in the process, that is at the bottom of this document.
 
 Unfortunately I do not have the luxuries of preparing a professional website for this, so hopefully Github's markdown is satisfactory!
 
 ## What's included?
+- Models and materials from games, including ones embedded into maps
+- Asset library support for models and materials
 - Each model should have their included skins and animations
 - Self-shadowing bump maps converted to Normal Maps
 - Maps that have been thoroughly optimized
-- Asset library support for models and materials
+- Source-style ropes on maps
+- HDRi's of skyboxes
+- Correct skins for props on maps
+<details>
+  
+<summary>Comparison vs. Plumber & SourceIO</summary>  
+
+Reference  
+<img src="https://github.com/hisprofile/blenderstuff/assets/41131633/fd56dc95-c2ac-4c6f-aec7-237f0c5d7d48" width=50%>
+
+Source Engine Blender Collection  
+<img src="https://github.com/hisprofile/blenderstuff/assets/41131633/c25b42f9-6195-4afe-99ac-1f53d83a0aba" width=50%>  
+[Cycles Render 2](https://github.com/hisprofile/blenderstuff/assets/41131633/9ce6e0e3-c439-49fa-af4f-e0b10dc56bf6)  
+[EEVEE Legacy Render](https://github.com/hisprofile/blenderstuff/assets/41131633/7a4cbf30-921d-4adc-9e74-a77cdcd67d4d)  
+
+[SourceIO](https://github.com/REDxEYE/SourceIO)  
+<img src="https://github.com/hisprofile/blenderstuff/assets/41131633/d1b7d31d-9404-49ae-a529-55c5444146a4" width=50%>
+
+[Plumber](https://github.com/lasa01/Plumber)  
+<img src="https://github.com/hisprofile/blenderstuff/assets/41131633/c42a1a0a-b7b5-428a-969a-9ce380186bc9" width=50%>
+</details>
 
 ## Map Extras
 ### Fog
@@ -101,10 +126,17 @@ Look for an empty object labelled "sky_camera." Around this empty should be lots
 Here, I am separating the world mesh around the skybox by pressing P. Once separated, I select the `sky_camera` empty, then the surrounding mesh, then I go to `Object > Transform VMF 3D Sky`
 
 ### Injecting Data
-`_resources.blend` contains two major node groups named `Resources-ShaderN Container` and `Resources-GeoN Container`. These two node groups contain every node group used by the materials, models, and maps. These node groups can have more node groups added inside them. That way, any new node group will be available in any .blend file you open. This makes for extremely easy editing across .blend files, minimizing the amount that would alternatively be needed.
+`_resources.blend` contains two major node groups named `Resources-ShaderN Container` and `Resources-GeoN Container`. These two main node groups contain every node group used by the materials, models, and maps. The main node groups can have more node groups added inside them. That way, any new node group will be available in any .blend file you open. This makes for extremely easy editing across .blend files, minimizing the amount that would alternatively be needed.
 
-### Opening Asset .blend Files  
-In the ported map files, you can open the .blend file of any linked prop or material. You can find this under the `Linked Properties` panel of any mesh or material tab. Clicking the operator will open the .blend file, and shift + clicking will reload the .blend file to apply the change. Make sure you save the file first!
+### Adjusting Ropes  
+By default, the ropes are shown in Source-style, meaning they are flat but will always face the camera (4.1+ ONLY). To adjust the thickness and texture length of the rope, head to the modifier panel and adjust the effect there.
+
+### Editing Linked Assets
+In the ported map files, you can open the .blend file of any linked model or material. You can find this under the `Linked Properties` panel of any mesh or material tab. Clicking the operator will open the .blend file, and Shift clicking will reload the .blend file to apply any changes. Make sure you save the file first!
+
+If you wish to apply a temporary fix, then you may be trying to **localize** an asset. On the mesh or material, look for a <img src="https://github.com/Shrinks99/blender-icons/blob/main/blender-icons/linked.svg" height=22> chain icon next to its name. Clicking this chain will create a local copy of the asset, allowing you to make changes that won't be saved to the original file. 
+
+If you are unable to localize a material, node group, image, etc., that means it is only being used by linked assets. If you wish to make a local copy, it needs to have at least one user that is not linked. For example, if you are failing to localize a material, it is most likely due to its user (model/prop in most cases) not being localized. Localize the model first, then you should have no issues localizing the material.
 
 ### Embedded Animations
 Skeletal meshes will have a custom property named `["actions"]` in its mesh data containing a list of all animations that were able to be imported with the models.
@@ -116,6 +148,22 @@ When using animations outside of maps, skeletons and meshes will appear deformed
 Some environment textures may appear super dark and saturated, appearing miscolored. The remedy is to adjust the sky texture's gamma with a `Gamma` node, and adjusting the brightness on the `Background` node. On the left, the gamma is unadjusted. On the right, the gamma is set to `0.196`. Adjust it to what feels right!
 
 <img src="https://github.com/hisprofile/blenderstuff/assets/41131633/3a330c86-9861-4c39-bf6d-da2b6df7a582" width=500>
+
+### Lighting isn't the same  
+This mostly applies to EEVEE Legacy, as it has no native support for real-time global illumination. In general, the ambience of the map will never be 1:1 between Blender and TF2 no matter what render engine you use. Despite that, Cycles will always appear closer.
+
+When baking a map, the HAMMER editor performs an effect like [global illumination](https://en.wikipedia.org/wiki/Global_illumination) onto areas of the map to give the ambience a semi-realistic feel. It will then save that data to use in-game. For example, a light will light up most parts of the room because the light bounces everywhere. This data is not recoverable when porting a map. Therefore, using a map in EEVEE Legacy can make the ambience feel lackluster. There are two remedies for this solution:
+
+#### Using [Irradiance Volumes](https://docs.blender.org/manual/en/latest/render/eevee/light_probes/irradiance_volumes.html)  
+Irradiance volumes will bake the ambience of its surroundings to then project off of its surroundings. This can be considered global illumination, but it is not real-time compared to cycles.
+
+#### Altering World Shader  
+Depending where the camera is in a map, you can brighten or darken the world shader through the `TF2 Ambience` node through the `Color` and `Strength` values to whatever feels right at the time. These values can be keyframed.
+
+
+### Known Issues
+- No support for 4wayblend materials
+- No animations from `.ani` files
 
 ## Installation Instructions  
 To install an archive of the Source Engine Blender Collection, you must first allocate a folder for a game collection. Then, download `_resources.blend` and `blender_assets.cats.txt`. `_resources.blend` is required regardless of what you decide to download. It serves as a resource pack for the models and materials to reuse data from. `blender_assets.cats.txt` is required for Blender's asset library functionality, allowing you to add the allocated folder as an asset library.
@@ -154,7 +202,7 @@ To choose a color for a zombie, the B channel, the alpha channel, and a gradient
 It's oddly efficient and capable. 2009 game development was crazy!
 
 ## Credits
-Syborg64 - Helped with infected shader
+Syborg64 - Helped with infected shader  
 мяFunreal - [Infected Shader guide](https://steamcommunity.com/sharedfiles/filedetails/?id=1567031703&preview=true)
 
 # [Portal](https://drive.google.com/open?id=15Pig2xn_8GHnraw3bsDN0o50dfnbb1qs&usp=drive_fs)
@@ -179,6 +227,9 @@ It seems that panel arms (I don't know what they're called) don't move the panel
 ### Hard Light Bridge
 Prop `props/wall_emitter` has a geometry nodes effect linked as a custom property. To use it, add a geometry nodes group and set the node group to `Hard Light Bridge`  
 <img src="https://github.com/hisprofile/blenderstuff/assets/41131633/0510ea5d-c192-4a04-9890-d6086b1d4094">
+
+## Issues
+- Map's water materials are broken
 
 ## Credits
 [Lil' Boneless Pizza](https://twitter.com/lilnobonepizza) - Helped with the Flowmap shader
@@ -219,8 +270,15 @@ Set `.VMF Maps Folder` to the folder containing all of the decompiled maps. Set 
 - Port and rig SFM version of L4D2 survivors
 - Port and rig Chell
 
+# Process
+After my experience with creating the TF2 Map Pack, this is what I know that had to be done:
+- Create .blend files from folders instead of joining all ported models into a single .blend file
+  - Easier to manage/modify
+- Implement a more efficient models of finding and re-using models
+  - Upon porting models or materials, they are saved
+
 # Credits
-[Plumber](https://github.com/lasa01/Plumber/releases) - Maps, animations
+[Plumber](https://github.com/lasa01/Plumber/releases) - Maps, animations  
 [SourceIO](https://github.com/REDxEYE/SourceIO/releases) - Models, materials, ropes
 
 ##### [Plumber by lasa01](https://github.com/lasa01/Plumber/releases), [SourceIO by REDxEYE](https://github.com/REDxEYE/SourceIO/releases)
