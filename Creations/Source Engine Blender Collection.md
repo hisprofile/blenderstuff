@@ -98,7 +98,7 @@ Look for an empty object labelled "sky_camera." Around this empty should be lots
 
 <img src="https://github.com/hisprofile/blenderstuff/assets/41131633/28c8dcea-8a6c-436e-ba94-5b008f7f7a28" width=70%>
 
-Here, I am separating the world mesh around the skybox by pressing P. Once separated, I select the `sky_camera` empty, then mesh surrounding, then I go to `Object > Transform VMF 3D Sky`
+Here, I am separating the world mesh around the skybox by pressing P. Once separated, I select the `sky_camera` empty, then the surrounding mesh, then I go to `Object > Transform VMF 3D Sky`
 
 ### Injecting Data
 `_resources.blend` contains two major node groups named `Resources-ShaderN Container` and `Resources-GeoN Container`. These two node groups contain every node group used by the materials, models, and maps. These node groups can have more node groups added inside them. That way, any new node group will be available in any .blend file you open. This makes for extremely easy editing across .blend files, minimizing the amount that would alternatively be needed.
@@ -111,6 +111,11 @@ Skeletal meshes will have a custom property named `["actions"]` in its mesh data
 
 ### Fixing Animations
 When using animations outside of maps, skeletons and meshes will appear deformed. This is because the animations are not the same scale as the models outside of the maps,
+
+### Adjusting Sky Material
+Some environment textures may appear super dark and saturated, appearing miscolored. The remedy is to adjust the sky texture's gamma with a `Gamma` node, and adjusting the brightness on the `Background` node. On the left, the gamma is unadjusted. On the right, the gamma is set to `0.196`. Adjust it to what feels right!
+
+<img src="https://github.com/hisprofile/blenderstuff/assets/41131633/3a330c86-9861-4c39-bf6d-da2b6df7a582" width=500>
 
 ## Installation Instructions  
 To install an archive of the Source Engine Blender Collection, you must first allocate a folder for a game collection. Then, download `_resources.blend` and `blender_assets.cats.txt`. `_resources.blend` is required regardless of what you decide to download. It serves as a resource pack for the models and materials to reuse data from. `blender_assets.cats.txt` is required for Blender's asset library functionality, allowing you to add the allocated folder as an asset library.
