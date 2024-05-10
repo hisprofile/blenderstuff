@@ -26,6 +26,7 @@ Unfortunately, I do not have the luxuries of preparing a professional website fo
 - [Games Ports Download](https://github.com/hisprofile/blenderstuff/blob/main/Creations/Source%20Engine%20Blender%20Collection.md#counter-strike-global-offensive)
 - [Porting Tools](https://github.com/hisprofile/blenderstuff/blob/main/Creations/Source%20Engine%20Blender%20Collection.md#source-to-blender-porting-tools---hisanimations)
 - [Porting Process](https://github.com/hisprofile/blenderstuff/blob/main/Creations/Source%20Engine%20Blender%20Collection.md#process)
+- [Donate](https://github.com/hisprofile/blenderstuff/blob/main/Creations/Source%20Engine%20Blender%20Collection.md#donate)
 - [Credits](https://github.com/hisprofile/blenderstuff/blob/main/Creations/Source%20Engine%20Blender%20Collection.md#credits-2)
 
 ## What's included?
@@ -404,6 +405,11 @@ Once the map has been properly ported, a collection of data is saved as a .json 
 - Used Assets
 
 The map is finally saved, the .blend file template is re-opened, and we move onto the next map.
+
+# [Donate](https://www.ko-fi.com/hisanimations)
+<img src="https://storage.ko-fi.com/cdn/useruploads/97badaaa-deab-4e2c-859c-08147d5accbe_cf8582e9-d3cf-4f62-a45f-7d1c93445c.png" width=50%>  
+
+If you'd like to donate through [Ko-Fi](https://www.ko-fi.com/hisanimations) that'd be great! The money would go towards expanding my drive storage, allowing me to do more ports to share. Something as small as $1 goes a long way.
 
 # Credits
 [Plumber](https://github.com/lasa01/Plumber/releases) - Maps, animations  
