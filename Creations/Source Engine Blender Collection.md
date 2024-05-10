@@ -293,22 +293,40 @@ Then I port the same .mdl file with Plumber, grab any animations and delete any 
 
 Finally, I store its true path as a custom property (directory + name) for identification purposes.
 
-### Step 3 - Mark as Assets
+### Step 3 - Mark as Asset
 A dictionary is created to help find models, acting like a map. their TRUE path (directory + name), the .blend file they will be saved in, and their true name (how they are visually named in the .blend file). A second dictionary is also created, but only to help find models. That way when porting materials later, we can avoid porting the same one because it was already ported through the models.
 
-The two containers mentioned earlier are attached to the mesh data of the model.
+The two containers mentioned earlier are attached to the mesh data of the model as a custom property.
 
 Finally, they are marked as assets. Previews will be automatically generated, and their catalog ID will be set to the unique UUID generated for the folder that is being ported from. 
 
 ### Step 4 - Export
 The two dictionaries that were created are dumped into a .json file. Then, any imported animations are dumped into another folder, then deleted in the current porting session. They are linked back to the session, then re-attached to the models via custom properties. This makes downloading animations optional, which can help you save space.
 
-Once the mappers (dictionaries) and animations are dumped, the models are 100% ready to be dumped to another file. And so they are. Then the next folder of `.mdl` files is next, and the process begins anew.
+Once the mappers (dictionaries) and animations are dumped, the models are 100% ready to be dumped to another file. And so they are. We move onto the next folder, and the process begins anew.
 
 ## Porting Materials
+A special .blend file is created, having the two containers mentioned earlier already linked.
+
 ### Step 1 - Create catalogs
 Recursively search through folders in which at least one .vmt file exists in. Catalogs are generated for these folders along with a unique UUID. 
 
+### Step 2 - Porting `.vmt`s
+I port all the .vmt files in the current folder of the recursion iteration one by one.
+
+### Step 3 - Mark as Asset
+Using the pre-existing materials mapper created by the models porter, I store the material's true path, the .blend file it will be saved in, and its true name (how they are visually named in the .blend file).
+
+The two containers mentioned earlier are attached the material as a custom property.
+
+Finally, they are marked as assets. Previews will be automatically generated, and their catalog ID will be set to the unique UUID generated for the folder that is being ported from. 
+
+### Step 4 - Export
+The materials mapper dictionary is dumped to a .json file. Then, the materials are dumped to a .blend file. We move onto the next folder, and the process begins anew.
+
+## Porting Maps
+### Step 1 - Port the Maps
+Import the map with Plumber in `.vmf` format, then again with SourceIO in `.bsp` format.
 
 After my experience with creating the TF2 Map Pack, this is what I know that had to be done:
 - Create .blend files from folders instead of joining all ported models into a single .blend file
