@@ -1,7 +1,6 @@
 # Source Engine Blender Collection
 ![image](https://github.com/hisprofile/blenderstuff/assets/41131633/2c3efb74-8198-4462-b29a-2a41e39e0cd8)
 
-
 Welcome to the **Source Engine Blender Collection!** A Blender archive of **45,000+** models, **45,000+** materials, and **550+** maps ported from eight of Valve's Source games! These ports were made with optimization and efficiency in mind, while catering to ease of usability. Below, you will find the installation instructions, download links for the ported archives, and general tips you may find useful. I've jam-packed this with features and nifty tricks, so this is definitely worth a read! If you're interested in the process, that is at the bottom of this document.
 
 Unfortunately, I do not have the luxuries of preparing a professional website for this, so hopefully Github's markdown is satisfactory!
@@ -24,7 +23,8 @@ Unfortunately, I do not have the luxuries of preparing a professional website fo
   - [Lighting isn't the Same](https://github.com/hisprofile/blenderstuff/blob/main/Creations/Source%20Engine%20Blender%20Collection.md#lighting-isnt-the-same)
   - [Known Issues](https://github.com/hisprofile/blenderstuff/blob/main/Creations/Source%20Engine%20Blender%20Collection.md#known-issues)
 - [Installation Instructions](https://github.com/hisprofile/blenderstuff/blob/main/Creations/Source%20Engine%20Blender%20Collection.md#installation-instructions)
-- [Games](https://github.com/hisprofile/blenderstuff/blob/main/Creations/Source%20Engine%20Blender%20Collection.md#counter-strike-global-offensive)
+- [Games Ports Download](https://github.com/hisprofile/blenderstuff/blob/main/Creations/Source%20Engine%20Blender%20Collection.md#counter-strike-global-offensive)
+- [Porting Tools](https://github.com/hisprofile/blenderstuff/blob/main/Creations/Source%20Engine%20Blender%20Collection.md#source-to-blender-porting-tools---hisanimations)
 - [Porting Process](https://github.com/hisprofile/blenderstuff/blob/main/Creations/Source%20Engine%20Blender%20Collection.md#process)
 - [Credits](https://github.com/hisprofile/blenderstuff/blob/main/Creations/Source%20Engine%20Blender%20Collection.md#credits-2)
 
@@ -192,6 +192,10 @@ Depending where the camera is in a map, you can brighten or darken the world sha
 ### Known Issues
 - No support for 4wayblend materials
 - No animations from `.ani` files
+- Water materials are partially broken
+- L4D2's infected shader is not perfect
+- Prop animations only look good on maps
+- SolidEnergy materials are not supported
 
 ## Installation Instructions  
 To install an archive of the Source Engine Blender Collection, you must first allocate a folder for a game collection. Then, download `_resources.blend` and `blender_assets.cats.txt`. `_resources.blend` is required regardless of what you decide to download. It serves as a resource pack for the models and materials to reuse data from. `blender_assets.cats.txt` is required for Blender's asset library functionality, allowing you to add the allocated folder as an asset library.
@@ -223,11 +227,15 @@ A ported archive of Half-Life: 2's assets, resulting in 3,217 models, 6,791 mate
 # [Left 4 Dead 1/2](https://drive.google.com/open?id=1Xymp5cf11V5edquQu5tdwxxVPU3FxNEU&usp=drive_fs)
 A ported archive of Left 4 Dead 2's assets, resulting in 5,497 models, 8,165 materials (4,999 usable out of asset library) and 60 maps. Totalling 4.45 GB.
 
+<details>
+  <summary>Recreating L4D2's infected Shader</summary>  
+  
 Making L4D2's [infected](https://developer.valvesoftware.com/wiki/Infected_(shader)) was stupidly complicated. It uses at most three textures to generate over 20K unique zombies in specific cases. It tiles the R and G channel into a 2x2 square for different blood, specularity, dirt and retro-reflectivity masking. To use it properly, you'd have to use it as a sprite sheet. The R and G channel are centered at 127, and any value towards 0 or 255 has a different effect. Lower R channel masks specularity, upper R channel masks dirt, lower G channel masks retro-reflectivity and upper G channel masks blood. Think of breaking two sticks down the middle and holding them at their ends. You'd now have four unique sticks that may or may not have their own unique purpose. (I don't know, use your imagination)
 
 To choose a color for a zombie, the B channel, the alpha channel, and a gradient map is used. The gradient map is 16 pixels tall and 256 pixels wide. The upper eight pixels are for skin tones and the lower eight are for clothing. If the B channel picks the rows of the column. is above 127, that means it will choose a random skin tone color from the upper eight rows. Else, choose a random clothing color from the lower eight rows. The alpha channel is used to choose the column of the gradient map.
 
 It's oddly efficient and capable. 2009 game development was crazy!
+</details>  
 
 ## Credits
 Syborg64 - Helped with infected shader  
@@ -251,10 +259,17 @@ It seems that panel arms (I don't know what they're called) don't move the panel
 <img src="https://github.com/hisprofile/blenderstuff/assets/41131633/aeaa8f3e-5c67-4164-81cb-d643e291f499" width=40%>
 </details>
 
+<details>  
+  <summary>Effects</summary>  
+
+  
 ## Effects
 ### Hard Light Bridge
 Prop `props/wall_emitter` has a geometry nodes effect linked as a custom property. To use it, add a geometry nodes group and set the node group to `Hard Light Bridge`  
 <img src="https://github.com/hisprofile/blenderstuff/assets/41131633/0510ea5d-c192-4a04-9890-d6086b1d4094">
+
+</details>  
+
 
 ## Issues
 - Map's water materials are broken
@@ -393,5 +408,8 @@ The map is finally saved, the .blend file template is re-opened, and we move ont
 # Credits
 [Plumber](https://github.com/lasa01/Plumber/releases) - Maps, animations  
 [SourceIO](https://github.com/REDxEYE/SourceIO/releases) - Models, materials, ropes
+Syborg64 - Helped with infected shader  
+мяFunreal - [Infected Shader guide](https://steamcommunity.com/sharedfiles/filedetails/?id=1567031703&preview=true)
+[Lil' Boneless Pizza](https://twitter.com/lilnobonepizza) - Helped with the Flowmap shader
 
 ##### [Plumber by lasa01](https://github.com/lasa01/Plumber/releases), [SourceIO by REDxEYE](https://github.com/REDxEYE/SourceIO/releases)
