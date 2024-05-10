@@ -6,6 +6,12 @@ Welcome to the **Source Engine Blender Collection!** A Blender archive of **45,0
 
 Unfortunately, I do not have the luxuries of preparing a professional website for this, so hopefully Github's markdown is satisfactory!
 
+<details>
+<summary>Table of Contents</summary>
+f
+  
+</details>
+
 ## What's included?
 - Models and materials from games, including ones embedded into maps
 - Asset library support for models and materials
@@ -269,13 +275,19 @@ Set `.VMF Maps Folder` to the folder containing all of the decompiled maps. Set 
 - Port and rig SFM version of L4D2 survivors
 - Port and rig Chell
 
-<!--
-
 # Process
 Going over my entire learning process this past month is just too much to write about, so I will summarize what I learned in the end.
 
+Everything was ported in Blender 4.0 due to 4.1 causing massive breakage by changing the auto-smooth method. However, this grants native support for 4.1, and possibly support for 3.6.
+
 ## Prerequisites
-- Create a resource library containing every shader node group or geometry node group that they could need. These node groups are stored inside of two containers - one for Shader nodes and one for Geometry nodes. These two containers are linked to any ported material or model, that way I can add more inside of the container *later* and have it show up any time I open a .blend file using this resource library. This is known as indirect linking. 
+- Create a resource library containing every shader node group or geometry node group that they could need
+  - These node groups are stored inside of two containers - one for Shader nodes and one for Geometry nodes. These two containers are linked to any ported material or model, that way I can add more inside of the container *later* and have it show up any time I open a .blend file using this resource library. This is known as indirect linking. 
+- Modify SourceIO
+  - https://github.com/REDxEYE/SourceIO/pull/287
+- Modify Plumber
+  - Make it export prop properties in the form of dictionaries
+  - Make it export paths for models and materials
 
 ## Porting Models
 A special .blend file is created, having the two containers mentioned earlier already linked.
@@ -326,31 +338,31 @@ The materials mapper dictionary is dumped to a .json file. Then, the materials a
 
 ## Porting Maps
 ### Step 1 - Port the Maps
-Import the map with Plumber in `.vmf` format, then again with SourceIO in `.bsp` format.
+Import the map with Plumber in `.vmf` format, then again with SourceIO in `.bsp` format. Plumber is better in general, as it cleans up the map a way a user would generally want it. It also has better support for lighting. SourceIO is used to import the ropes. The ropes are modified with a geometry node group to make them source-styled.
 
-After my experience with creating the TF2 Map Pack, this is what I know that had to be done:
-- Create .blend files from folders instead of joining all ported models into a single .blend file
-  - Easier to manage/modify
-- Implement a more efficient models of finding and re-using models
-  - Upon porting models or materials, a form of identification for them is saved in a .json file: their TRUE path (directory + name), the .blend file they are saved in, and their true name
-- Find a way to import ropes for maps
-  - SourceIO is able to import ropes, Plumber is not
-- Create a resource library for all shading and geometry utilities
-  - What's nice about having all the models and materials stored under the same .blend file is that all of them share the same shader node groups. If I split the models and assets by folder, how do I make sure they all still use the same node groups? The answer is to create and use a resource library containing all of the shader nodes they would need, allowing me to modify data in the resource library and having the changes applied to any user of the resource library.
-- More efficient way of linking/reusing assets
-  - In the run of porting every TF2 map, I used a stupidly inefficient method to link models and materials, by using the `bpy.ops.wm.link` operator. I had no idea that the `bpy.data.libraries.load` function existed, which lets me load data blocks from a `.blend` file by using known names and access them with a returned values.
-- Find a way to access `.VMF` data to find properties of entities
-  - I found a python module named `valvevmf` which lets me load a `.VMF` file to access properties of entities through a dictionary. It's stored in a node format, so I wrote a function to unravel it and save data in a dictionary using the id as a key and its properties as the value. This would prove to be wildly inefficient as the load time was insanely long. I only needed this to access properties of models for skins, models and such, and to delete brushes set to `rendermode 10`, which makes them invisible. However, Plumber is able to save those properties as custom properties, and I could read the `.VMF` file in reverse to see which brushes have rendermode 10, then just delete based on that. I scrapped the `valvevmf` module later on in the porting process.
+### Step 2 - Link from Existing Assets
+Once ported, the linking/reusing process begins. It will first go through every object under the `brushes` and `overlays` collection to compile a list of materials that need to be ported using the materials mapper. Once the list is complete, it will go through every mentioned .blend file and grab every material in the list under the .blend file. The objects' current materials are then replaced with the linked materials.
 
-Once I had the plans laid out, it was time to get to work.
+The same thing happens again, this time with the models. Once they have all been ported, they are adjusted for skins.
 
-## Step 1: Resource Library
-First, I had to create the resource library full of the node groups needed by models and materials. However, it dawned upon me to store these node groups under another node group that acts as a container. That way, when I link the container to any imported model or material, I could put more stuff in the container *later* and have it appear in whatever `.blend` file I open. This is known as indirect linking. I did the same thing with geometry nodes, just in case.
+### Step 3 - Remove "rendermode" "10" Brushes
+Brushes set to "rendermode" "10" are invisible in-game, so it makes no sense to keep them in the final port. The `.VMF` file is open and read in reversed to create a list of brush entities to delete if their rendermode is set to 10. 
 
-## Step 2: Model Porter
-Creating 
+### Step 4 - Final Touches
+- Ambient occlusion is added.
+- The world shader is adjusted to use a solid color of ambience instead of relying on the skybox, while still showing the skybox.
+- The skybox is exported as an .exr file
 
--->
+### Step 5 - Save
+Once the map has been properly ported, a collection of data is saved as a .json file before finally saving the map:
+- Start Size
+- Final Size
+- Object Count
+- Light Count
+- Port Time
+- Used Assets
+
+The map is finally saved, the .blend file template is re-opened, and we move onto the next map.
 
 # Credits
 [Plumber](https://github.com/lasa01/Plumber/releases) - Maps, animations  
