@@ -1,7 +1,7 @@
 # Source Engine Blender Collection
 ![image](https://github.com/hisprofile/blenderstuff/assets/41131633/2c3efb74-8198-4462-b29a-2a41e39e0cd8)
 
-Welcome to the **Source Engine Blender Collection!** A Blender archive of **45,000+** models, **45,000+** materials, and **550+** maps ported from eight of Valve's Source games! These ports were made with optimization and efficiency in mind, while catering to ease of usability. Below, you will find the installation instructions, download links for the ported archives, and general tips you may find useful. I've jam-packed this with features and nifty tricks, so this is definitely worth a read! If you're interested in the process, that is at the bottom of this document.
+Welcome to the **Source Engine Blender Collection!** A Blender archive of **45,000+** models, **45,000+** materials, and **550+** maps ported from eight of Valve's Source games! These ports were made with optimization and efficiency in mind, while catering to ease of usability. Below, you will find the installation instructions, download links for the ported archives, and general tips you may find useful. I've jam-packed this with features and nifty tricks, so this is definitely worth a read! If you're interested in the process, that is at the bottom of this document. A lot of love went into the project. I promise you it wasn't as simple as importing an asset!
 
 Unfortunately, I do not have the luxuries of preparing a professional website for this, so hopefully Github's markdown is satisfactory!
 
