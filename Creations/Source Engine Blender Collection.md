@@ -11,6 +11,7 @@ Unfortunately, I do not have the luxuries of preparing a professional website fo
   - [Fog](https://github.com/hisprofile/blenderstuff/blob/main/Creations/Source%20Engine%20Blender%20Collection.md#fog)
   - [Overlays Offset](https://github.com/hisprofile/blenderstuff/blob/main/Creations/Source%20Engine%20Blender%20Collection.md#overlays-offset)
   - [Delete Materials from Faces](https://github.com/hisprofile/blenderstuff/blob/main/Creations/Source%20Engine%20Blender%20Collection.md#delete-materials-from-faces)
+  - [Fix Bodygroups](https://github.com/hisprofile/blenderstuff/blob/main/Creations/Source%20Engine%20Blender%20Collection.md#fix-bodygroups)
   - [Proximity Lights](https://github.com/hisprofile/blenderstuff/blob/main/Creations/Source%20Engine%20Blender%20Collection.md#proximity-lights)
 - [Tips](https://github.com/hisprofile/blenderstuff/blob/main/Creations/Source%20Engine%20Blender%20Collection.md#tips)
   - [Fixing Skyboxes](https://github.com/hisprofile/blenderstuff/blob/main/Creations/Source%20Engine%20Blender%20Collection.md#fixing-skybox)
@@ -69,6 +70,12 @@ Overlays in the map usually have clipping issues, which can make a render look r
 Tons of unneeded materials such as `toolsnodraw` and `toolsblack` can pollute a file with unneeded geometry. Despite not being visible in EEVEE, they can produce visual errors in Cycles through Z-fighting. Deleting this geometry through a node group is a fast solution, and is applied to every object of a collection by batch. Set the material you wish to be deleted and click `Delete Material`. `Remove "Delete Material" Node Group` will delete every node group targeted the selected material. Shift clicking this operator will delete every node group regardless of material.
 
 <img src="https://github.com/hisprofile/blenderstuff/assets/41131633/990eb4a4-e66c-4344-a269-dbd43d9a0c9d" width=70%>
+
+### Fix Bodygroups
+Some models have swappable bodygroups. If left untreated, these bodygroups can stack on top of each other and cause the model to appear not how it should. To fix this, you can use the `Fix Bodygroups` operator to adjust the model. The geometry nodes modifier that appears will not have a title for body groups, only indices. You'll have to go through trial and error to make it look how you want.
+
+<img src="https://github.com/hisprofile/blenderstuff/assets/41131633/606e86f8-6922-4b14-8a5d-80fa799fde77" width=70%>
+
 
 ### Proximity Lights  
 
