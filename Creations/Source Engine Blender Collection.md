@@ -4,7 +4,7 @@
 
 Welcome to the **Source Engine Blender Collection!** A Blender archive of **45,000+** models, **45,000+** materials, and **550+** maps ported from eight of Valve's Source games! These ports were made with optimization and efficiency in mind, while catering to ease of usability. Below, you will find the installation instructions, download links for the ported archives, and general tips you may find useful. I've jam-packed this with features and nifty tricks, so this is definitely worth a read! If you're interested in the process, that is at the bottom of this document.
 
-Unfortunately I do not have the luxuries of preparing a professional website for this, so hopefully Github's markdown is satisfactory!
+Unfortunately, I do not have the luxuries of preparing a professional website for this, so hopefully Github's markdown is satisfactory!
 
 ## What's included?
 - Models and materials from games, including ones embedded into maps
@@ -266,16 +266,36 @@ Open `_materials_porter.blend` and set the `materials/ Folder` path to the `mate
 Set `.VMF Maps Folder` to the folder containing all of the decompiled maps. Set `.BSP Maps Path` to the folder containing all of the `.bsp` versions of the maps. Set `Asset Folder Save Path` to where you want the models to be saved. `//` means it will be saved alongside `_maps_porter.blend`. Set `Game Folder` to the game folder. This folder should have the `models` and `materials` folder under it. Set `Games:` to the game you are attempting to port from. Once ready, hit `Start Batch Porting`.
 
 # To-Do
-- Fix decals to be fog compatible
 - Port and rig SFM version of L4D2 survivors
 - Port and rig Chell
 
 # Process
+Going over my entire learning process this past month is just too much to write about, so I will summarize what I learned in the end.
+
+## Porting Models
+
+
 After my experience with creating the TF2 Map Pack, this is what I know that had to be done:
 - Create .blend files from folders instead of joining all ported models into a single .blend file
   - Easier to manage/modify
 - Implement a more efficient models of finding and re-using models
-  - Upon porting models or materials, they are saved
+  - Upon porting models or materials, a form of identification for them is saved in a .json file: their TRUE path (directory + name), the .blend file they are saved in, and their true name
+- Find a way to import ropes for maps
+  - SourceIO is able to import ropes, Plumber is not
+- Create a resource library for all shading and geometry utilities
+  - What's nice about having all the models and materials stored under the same .blend file is that all of them share the same shader node groups. If I split the models and assets by folder, how do I make sure they all still use the same node groups? The answer is to create and use a resource library containing all of the shader nodes they would need, allowing me to modify data in the resource library and having the changes applied to any user of the resource library.
+- More efficient way of linking/reusing assets
+  - In the run of porting every TF2 map, I used a stupidly inefficient method to link models and materials, by using the `bpy.ops.wm.link` operator. I had no idea that the `bpy.data.libraries.load` function existed, which lets me load data blocks from a `.blend` file by using known names and access them with a returned values.
+- Find a way to access `.VMF` data to find properties of entities
+  - I found a python module named `valvevmf` which lets me load a `.VMF` file to access properties of entities through a dictionary. It's stored in a node format, so I wrote a function to unravel it and save data in a dictionary using the id as a key and its properties as the value. This would prove to be wildly inefficient as the load time was insanely long. I only needed this to access properties of models for skins, models and such, and to delete brushes set to `rendermode 10`, which makes them invisible. However, Plumber is able to save those properties as custom properties, and I could read the `.VMF` file in reverse to see which brushes have rendermode 10, then just delete based on that. I scrapped the `valvevmf` module later on in the porting process.
+
+Once I had the plans laid out, it was time to get to work.
+
+## Step 1: Resource Library
+First, I had to create the resource library full of the node groups needed by models and materials. However, it dawned upon me to store these node groups under another node group that acts as a container. That way, when I link the container to any imported model or material, I could put more stuff in the container *later* and have it appear in whatever `.blend` file I open. This is known as indirect linking. I did the same thing with geometry nodes, just in case.
+
+## Step 2: Model Porter
+Creating 
 
 # Credits
 [Plumber](https://github.com/lasa01/Plumber/releases) - Maps, animations  
