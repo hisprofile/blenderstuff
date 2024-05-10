@@ -269,10 +269,45 @@ Set `.VMF Maps Folder` to the folder containing all of the decompiled maps. Set 
 - Port and rig SFM version of L4D2 survivors
 - Port and rig Chell
 
+<!--
+
 # Process
 Going over my entire learning process this past month is just too much to write about, so I will summarize what I learned in the end.
 
+## Prerequisites
+- Create a resource library containing every shader node group or geometry node group that they could need. These node groups are stored inside of two containers - one for Shader nodes and one for Geometry nodes. These two containers are linked to any ported material or model, that way I can add more inside of the container *later* and have it show up any time I open a .blend file using this resource library. This is known as indirect linking. 
+
 ## Porting Models
+A special .blend file is created, having the two containers mentioned earlier already linked.
+
+The tasks and process for porting the models are as follows in the form of steps:  
+### Step 1 - Create catalogs
+Recursively search through folders in which at least one .mdl file exists in. Catalogs are generated for these folders along with a unique UUID. 
+
+### Step 2 - Porting `.mdl`s
+I port all the .mdl files in the current folder of the recursion iteration one by one, twice! Once with SourceIO then once with Plumber, for animations. The end goal was to have one single mesh in the end, but because the imported .mdl could have multiple body groups, I had to mark them by their bodygroup index and their model index. This was necessary to have a way to separate them through a geometry node group. Once that's done, I merge them all into one object (if they weren't one object already) then link them to a new collection. 
+
+Next, I had to save the skin groups. Luckily, SourceIO already does that, but I need to update the skin group dictionary to make it more reliable. The dictionary only stores names of the skin groups, but it's better to have their actual data blocks instead. 
+
+Then I port the same .mdl file with Plumber, grab any animations and delete any new objects, then save the animations in a dictionary with the model it is for.
+
+Finally, I store its true path as a custom property (directory + name) for identification purposes.
+
+### Step 3 - Mark as Assets
+A dictionary is created to help find models, acting like a map. their TRUE path (directory + name), the .blend file they will be saved in, and their true name (how they are visually named in the .blend file). A second dictionary is also created, but only to help find models. That way when porting materials later, we can avoid porting the same one because it was already ported through the models.
+
+The two containers mentioned earlier are attached to the mesh data of the model.
+
+Finally, they are marked as assets. Previews will be automatically generated, and their catalog ID will be set to the unique UUID generated for the folder that is being ported from. 
+
+### Step 4 - Export
+The two dictionaries that were created are dumped into a .json file. Then, any imported animations are dumped into another folder, then deleted in the current porting session. They are linked back to the session, then re-attached to the models via custom properties. This makes downloading animations optional, which can help you save space.
+
+Once the mappers (dictionaries) and animations are dumped, the models are 100% ready to be dumped to another file. And so they are. Then the next folder of `.mdl` files is next, and the process begins anew.
+
+## Porting Materials
+### Step 1 - Create catalogs
+Recursively search through folders in which at least one .vmt file exists in. Catalogs are generated for these folders along with a unique UUID. 
 
 
 After my experience with creating the TF2 Map Pack, this is what I know that had to be done:
@@ -296,6 +331,8 @@ First, I had to create the resource library full of the node groups needed by mo
 
 ## Step 2: Model Porter
 Creating 
+
+-->
 
 # Credits
 [Plumber](https://github.com/lasa01/Plumber/releases) - Maps, animations  
