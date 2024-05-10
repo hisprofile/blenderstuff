@@ -6,8 +6,6 @@ Welcome to the **Source Engine Blender Collection!** A Blender archive of **45,0
 
 Unfortunately, I do not have the luxuries of preparing a professional website for this, so hopefully Github's markdown is satisfactory!
 
-<details>
-<summary>Table of Contents</summary>
 - [What's included?](https://github.com/hisprofile/blenderstuff/blob/main/Creations/Source%20Engine%20Blender%20Collection.md#whats-included)
 - [Map Extras](https://github.com/hisprofile/blenderstuff/blob/main/Creations/Source%20Engine%20Blender%20Collection.md#map-extras)
 - [Tips](https://github.com/hisprofile/blenderstuff/blob/main/Creations/Source%20Engine%20Blender%20Collection.md#tips)
@@ -15,8 +13,6 @@ Unfortunately, I do not have the luxuries of preparing a professional website fo
 - [Games](https://github.com/hisprofile/blenderstuff/blob/main/Creations/Source%20Engine%20Blender%20Collection.md#counter-strike-global-offensive)
 - [Porting Process](https://github.com/hisprofile/blenderstuff/blob/main/Creations/Source%20Engine%20Blender%20Collection.md#process)
 - [Credits](https://github.com/hisprofile/blenderstuff/blob/main/Creations/Source%20Engine%20Blender%20Collection.md#credits-2)
-  
-</details>
 
 ## What's included?
 - Models and materials from games, including ones embedded into maps
