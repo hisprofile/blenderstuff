@@ -281,7 +281,7 @@ Prop `props/wall_emitter` has a geometry nodes effect linked as a custom propert
 # [Team Fortress 2](https://drive.google.com/drive/folders/10IZLq5VTM1S2B3D4UBdXLMO0tuZC8jq7)
 A ported archive of Team Fortress 2's assets, resulting in 7,627 models, 16,602 materials (10,055 usable out of asset library) and 185 maps. Totalling 7.55 GB
 
-This port is different from the rest, as everything is scaled at 0.1 scale to accomodate for my [TF2 ports](https://github.com/hisprofile/blenderstuff/tree/main/Guides/TF2%20Blender)
+This port is different from the rest, as everything is scaled at 0.1 scale to accomodate for my [TF2 ports](https://github.com/hisprofile/blenderstuff/tree/main/Guides/TF2%20Blender). Scale to 0.1905 if you wish to maintain parity with the other items in the Source Engine Blender Collection
 
 # Source to Blender Porting Tools - hisanimations
 [Porting Tools .zip](https://github.com/hisprofile/blenderstuff/raw/main/Creations/source_blender_porting_tools.zip)  
@@ -413,9 +413,9 @@ If you'd like to donate through [Ko-Fi](https://www.ko-fi.com/hisanimations) tha
 
 # Credits
 [Plumber](https://github.com/lasa01/Plumber/releases) - Maps, animations  
-[SourceIO](https://github.com/REDxEYE/SourceIO/releases) - Models, materials, ropes
+[SourceIO](https://github.com/REDxEYE/SourceIO/releases) - Models, materials, ropes  
 Syborg64 - Helped with infected shader  
-мяFunreal - [Infected Shader guide](https://steamcommunity.com/sharedfiles/filedetails/?id=1567031703&preview=true)
-[Lil' Boneless Pizza](https://twitter.com/lilnobonepizza) - Helped with the Flowmap shader
+мяFunreal - [Infected Shader guide](https://steamcommunity.com/sharedfiles/filedetails/?id=1567031703&preview=true)  
+[Lil' Boneless Pizza](https://twitter.com/lilnobonepizza) - Helped with the Flowmap shader, made a few renders for the background
 
 ##### [Plumber by lasa01](https://github.com/lasa01/Plumber/releases), [SourceIO by REDxEYE](https://github.com/REDxEYE/SourceIO/releases)
