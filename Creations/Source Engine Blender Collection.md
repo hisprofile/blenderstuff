@@ -418,4 +418,7 @@ Syborg64 - Helped with infected shader
 мяFunreal - [Infected Shader guide](https://steamcommunity.com/sharedfiles/filedetails/?id=1567031703&preview=true)  
 [Lil' Boneless Pizza](https://twitter.com/lilnobonepizza) - Helped with the Flowmap shader, made a few renders for the background
 
+To the authors of SourceIO and Plumber:  
+Working on this project has allowed me greater insight to what goes on in your addons, and it just blows my mind how much dedication you all bring to the table. I am so grateful for your contributions. Without you, none of this would have been possible.
+
 ##### [Plumber by lasa01](https://github.com/lasa01/Plumber/releases), [SourceIO by REDxEYE](https://github.com/REDxEYE/SourceIO/releases)
