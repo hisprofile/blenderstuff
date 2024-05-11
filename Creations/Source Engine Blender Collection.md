@@ -409,7 +409,7 @@ The map is finally saved, the .blend file template is re-opened, and we move ont
 # [Donate](https://www.ko-fi.com/hisanimations)
 <img src="https://storage.ko-fi.com/cdn/useruploads/97badaaa-deab-4e2c-859c-08147d5accbe_cf8582e9-d3cf-4f62-a45f-7d1c93445c.png" width=50%>  
 
-If you'd like to donate through [Ko-Fi](https://www.ko-fi.com/hisanimations) that'd be great! The money would go towards expanding my drive storage, allowing me to do more ports to share. Something as small as $1 goes a long way.
+If you'd like to donate through [Ko-Fi](https://www.ko-fi.com/hisanimations) that'd be great! The money would go towards expanding my drive storage, allowing me to do more ports to share.
 
 # Credits
 [Plumber](https://github.com/lasa01/Plumber/releases) - Maps, animations  
