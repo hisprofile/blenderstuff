@@ -5,6 +5,8 @@ Welcome to the **Source Engine Blender Collection!** A Blender archive of **45,0
 
 Unfortunately, I do not have the luxuries of preparing a professional website for this, so hopefully Github's markdown is satisfactory!
 
+Minimum Blender ver.: 3.6
+
 - [What's included?](https://github.com/hisprofile/blenderstuff/blob/main/Creations/Source%20Engine%20Blender%20Collection.md#whats-included)
 - [Map Extras](https://github.com/hisprofile/blenderstuff/blob/main/Creations/Source%20Engine%20Blender%20Collection.md#map-extras)
   - [Fog](https://github.com/hisprofile/blenderstuff/blob/main/Creations/Source%20Engine%20Blender%20Collection.md#fog)
