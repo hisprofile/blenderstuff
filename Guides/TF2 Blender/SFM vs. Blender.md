@@ -9,7 +9,7 @@ From an animator's perspective, here's what you can expect out of
 - Mass amounts of content available for users
   - With the workshop and included games, tons of assets such as characters, props and visual effects can be seamlessly loaded into SFM with little to no setting up required. And with how much is available on the workshop, thousands of SFM creators can feel catered to, as what they want is most likely there.
 - Baked assets = Good performance
-  - Maps, models and materials are all pre-compiled SIGNIFICANTLY reducing the amount of calculating for the final image. So for an animation program running on a game engine, it can actually run pretty well for how much detail is displayed on the screen.
+  - Maps, models and materials are all compiled beforehand, SIGNIFICANTLY reducing the amount of calculating for the final image. So for an animation program running on a game engine, it can actually run pretty well for how much detail is displayed on the screen.
 - Particles galore
   - With the Source engine's incredibly versatile particle editor, visual effects is pretty much a drag-and-drop thing. The only drawback is that particles cannot be reused, so for effect like muzzle flashes, you'll have to add a new particle for every time you want to use it.
 - Can be easy to learn
