@@ -436,3 +436,5 @@ To the authors of SourceIO and Plumber:
 Working on this project has allowed me greater insight to what goes on in your addons, and it just blows my mind how much dedication you all bring to the table. I am so grateful for your contributions. Without you, none of this would have been possible.
 
 ##### [Plumber by lasa01](https://github.com/lasa01/Plumber/releases), [SourceIO by REDxEYE](https://github.com/REDxEYE/SourceIO/releases)
+
+<img src="https://github.com/hisprofile/blenderstuff/assets/41131633/347c0db7-f43a-4077-b259-b15efd1561f4" height=64>
