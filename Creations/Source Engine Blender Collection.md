@@ -82,11 +82,21 @@ Some models have swappable bodygroups. If left untreated, these bodygroups can s
 
 ### Proximity Lights  
 
-<img src="https://github.com/hisprofile/blenderstuff/assets/41131633/01cdc3fd-0c16-4599-b417-0f6425633a56" width=30%>  
+<img src="https://github.com/hisprofile/blenderstuff/assets/41131633/c8baad84-7ff3-4e8e-bcc6-6b6afc6e9b42" width=70%>
+
 
 This feature is more useful to EEVEE.
 
-EEVEE's light limit is hardcapped at 127 due to technical limitations. This is a problem, as most of the maps exceed that light limit. The solution to this is an addon that disables lights when too far from the active camera, a distance threshold determined by the user. This is updated every frame.  
+EEVEE Legacy's light limit is hardcapped at 127 due to technical limitations. This is a problem, as most of the maps exceed that light limit. The solution to this is a node group that disables lights when too far from the active camera, a distance threshold determined by the user. This is updated real-time.
+
+#### Method 1 (Faster, less flexible)
+
+You can initialize the Proximity Lights node group by going to `Proximity Lights - Geo Nodes` in the <img src="https://github.com/Shrinks99/blender-icons/blob/main/blender-icons/tool_settings.svg" height=23> Tools tab. Upon initializing, any sun lights in the light collection will be moved to a new collection to isolate them, and a proxy object for the optimized lights will be created. In the modifier panel of this proxy object, you can edit the parameters of the Proximity Lights node group, such as `Camera Frustrum` and `Light Culling`. Enabling `Camera Frustrum` will delete any lights not in view of the camera, and enabling `Light Culling` will set a hard cap on how many lights can be visible at once.
+
+> [!NOTE]
+> It is worth noting that in the optimized state of Proximity Lights, you can not edit the lights in any way. To make changes, you will need to swap back to the unoptimized state of the lights in the Tools tab. Once changes are ready, swap back to the optimized state of the lights.
+
+<!--
 [Proximity Lights documentation](https://github.com/hisprofile/ProximityLights/blob/main/README.md)
 
 #### Optimizing lights: Method 1 (Slower, more flexible)
@@ -95,6 +105,8 @@ Use the addon as instructed
 #### Method 2 (Faster, less flexible)
 Use geometry nodes.
 [Proximity Lights - Geometry Nodes Version](https://github.com/hisprofile/blenderstuff/blob/main/Tools/Proximity%20Lights%20-%20Geometry%20Nodes/Documentation.md)
+-->
+
 
 ### Extensions
 Every good project should have a way for users to mod it, and so I introduce extension loader! A non-destructive way for users to add their own scripts. Upon loading a map, the .blend file will check if a folder named `_extensions` exists in the archive root directory. If it does, it will go through all .py files under the folder and load them. It should be structured like a regular Blender addon, sans any code executing a register function.
