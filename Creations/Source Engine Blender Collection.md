@@ -32,6 +32,7 @@ Minimum Blender ver.: 3.6
 - [Credits](https://github.com/hisprofile/blenderstuff/blob/main/Creations/Source%20Engine%20Blender%20Collection.md#credits-2)
 
 ## What's included?
+- 40 Gb of content
 - Models and materials from games, including ones embedded into maps
 - Asset library support for models and materials
 - Each model should have their included skins and animations
