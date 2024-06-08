@@ -438,4 +438,9 @@ Working on this project has allowed me greater insight to what goes on in your a
 
 ##### [Plumber by lasa01](https://github.com/lasa01/Plumber/releases), [SourceIO by REDxEYE](https://github.com/REDxEYE/SourceIO/releases)
 
+# Disclaimer
+I do not own, nor do I claim to own any ported asset that is hosted on my Google Drive. I am simply a middle man to help people get what they want. Everything is non-profit, and not blocked by any form of paywall.
+
+All rights go to the creators of the original models.
+
 <img src="https://github.com/hisprofile/blenderstuff/assets/41131633/347c0db7-f43a-4077-b259-b15efd1561f4" height=64>
