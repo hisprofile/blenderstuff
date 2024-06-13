@@ -438,6 +438,16 @@ Working on this project has allowed me greater insight to what goes on in your a
 
 ##### [Plumber by lasa01](https://github.com/lasa01/Plumber/releases), [SourceIO by REDxEYE](https://github.com/REDxEYE/SourceIO/releases)
 
+# Changelog
+<details>
+  <summary>Changelog</summary>
+- 6/11/2024
+  - Removed duplicate HL2 assets in CS:S, DOD:S, Portal
+- 6/12/2024
+  - Exchanged prop armature's in maps with a linked copy instead of a local copy
+  - Scaled animations to prop scale
+</details>
+
 # Disclaimer
 I do not own, nor do I claim to own any ported asset that is hosted on my Google Drive. I am simply a middle man to help people get what they want. Everything is non-profit, and not blocked by any form of paywall.
 
