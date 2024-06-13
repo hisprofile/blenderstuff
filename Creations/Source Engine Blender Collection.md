@@ -441,9 +441,9 @@ Working on this project has allowed me greater insight to what goes on in your a
 # Changelog
 <details>
   <summary>Changelog</summary>
-- 6/11/2024
+## 6/11/2024
   - Removed duplicate HL2 assets in CS:S, DOD:S, Portal
-- 6/12/2024
+## 6/12/2024
   - Exchanged prop armature's in maps with a linked copy instead of a local copy
   - Scaled animations to prop scale
 </details>
