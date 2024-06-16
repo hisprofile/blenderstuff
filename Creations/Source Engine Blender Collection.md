@@ -448,6 +448,8 @@ Working on this project has allowed me greater insight to what goes on in your a
 - 6/12/2024
   - Exchanged prop armature's in maps with a linked copy instead of a local copy
   - Scaled animations to prop scale
+- 6/15/2024
+  - Scaled TF2 port to 0.01905 for consistency among the other ports
 </details>
 
 # Disclaimer
