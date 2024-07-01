@@ -61,9 +61,27 @@ Source Engine Blender Collection
 </details>
 
 ## Map Extras
+### Proximity Lights  
+
+<img src="https://github.com/hisprofile/blenderstuff/assets/41131633/c8baad84-7ff3-4e8e-bcc6-6b6afc6e9b42" width=70%>
+
+This feature is more useful to EEVEE.
+
+EEVEE Legacy's light limit is hardcapped at 127 due to technical limitations. This is a problem, as most of the maps exceed that light limit. The solution to this is a node group that disables lights when too far from the active camera, a distance threshold determined by the user. This is updated real-time.
+
+#### Method 1 (Faster, less flexible)
+
+You can initialize the Proximity Lights node group by going to `Proximity Lights - Geo Nodes` in the <img src="https://github.com/Shrinks99/blender-icons/blob/main/blender-icons/tool_settings.svg" height=23> Tools tab. Upon initializing, any sun lights in the light collection will be moved to a new collection to isolate them, and a proxy object for the optimized lights will be created. In the modifier panel of this proxy object, you can edit the parameters of the Proximity Lights node group, such as `Camera Frustrum` and `Light Culling`. Enabling `Camera Frustrum` will delete any lights not in view of the camera, and enabling `Light Culling` will set a hard cap on how many lights can be visible at once.
+
+> [!NOTE]
+> It is worth noting that in the optimized state of Proximity Lights, you can not edit the lights in any way. To make changes, you will need to swap back to the unoptimized state of the lights in the Tools tab. Once changes are ready, swap back to the optimized state of the lights.
+
 ### Fog
 Tons of Source games use a fog effect in their gameplay, and fortunately that shader is easy to recreate. To mess around with the fog settings in a map, head over to the `Tools` tab and open up the `Fog Properties`. From there, you can adjust the fog strength, minimum and maximum distances, and the color gradient the fog uses.  
 <img src="https://github.com/hisprofile/blenderstuff/assets/41131633/4897ea4a-f2e6-4bd5-842a-5b8724320e25" width=70%>
+
+Use the `Apply Fog Colors` tool to grab fog from an env_fog_controller!
+<img src="https://github.com/hisprofile/blenderstuff/assets/41131633/ff4a2050-1e29-43c4-a5a5-2c34a978e0c4" width=70%>
 
 ### Overlays Offset
 Overlays in the map usually have clipping issues, which can make a render look really ugly upon a render. In the `Map Extras` tab lies a panel named `Overlays Offset`. You can randomize the offset in case of overlays overlapping each other, or in case the overlays are clipping into a map. `Decal Collection` can be set for a custom set of meshes to fix. If left empty, it will fix all overlays in the `overlays` collection by default. When ready, click `Offset Overlays`. All overlays will be offset by their normal scaled by the inputted sizes.
@@ -80,22 +98,10 @@ Some models have swappable bodygroups. If left untreated, these bodygroups can s
 
 <img src="https://github.com/hisprofile/blenderstuff/assets/41131633/606e86f8-6922-4b14-8a5d-80fa799fde77" width=70%>
 
+### Linked Actions
+If supported animations were able to be imported, they can be viewed and added as an NLA strip to the prop.
 
-### Proximity Lights  
-
-<img src="https://github.com/hisprofile/blenderstuff/assets/41131633/c8baad84-7ff3-4e8e-bcc6-6b6afc6e9b42" width=70%>
-
-
-This feature is more useful to EEVEE.
-
-EEVEE Legacy's light limit is hardcapped at 127 due to technical limitations. This is a problem, as most of the maps exceed that light limit. The solution to this is a node group that disables lights when too far from the active camera, a distance threshold determined by the user. This is updated real-time.
-
-#### Method 1 (Faster, less flexible)
-
-You can initialize the Proximity Lights node group by going to `Proximity Lights - Geo Nodes` in the <img src="https://github.com/Shrinks99/blender-icons/blob/main/blender-icons/tool_settings.svg" height=23> Tools tab. Upon initializing, any sun lights in the light collection will be moved to a new collection to isolate them, and a proxy object for the optimized lights will be created. In the modifier panel of this proxy object, you can edit the parameters of the Proximity Lights node group, such as `Camera Frustrum` and `Light Culling`. Enabling `Camera Frustrum` will delete any lights not in view of the camera, and enabling `Light Culling` will set a hard cap on how many lights can be visible at once.
-
-> [!NOTE]
-> It is worth noting that in the optimized state of Proximity Lights, you can not edit the lights in any way. To make changes, you will need to swap back to the unoptimized state of the lights in the Tools tab. Once changes are ready, swap back to the optimized state of the lights.
+<img src="https://github.com/hisprofile/blenderstuff/assets/41131633/b9202320-84f0-4d90-a89b-0c37281badce" width=70%>
 
 <!--
 [Proximity Lights documentation](https://github.com/hisprofile/ProximityLights/blob/main/README.md)
