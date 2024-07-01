@@ -1,5 +1,6 @@
 # Source Engine Blender Collection
-![image](https://github.com/hisprofile/blenderstuff/assets/41131633/2c3efb74-8198-4462-b29a-2a41e39e0cd8)
+[![image](https://github.com/hisprofile/blenderstuff/assets/41131633/2c3efb74-8198-4462-b29a-2a41e39e0cd8)](https://www.youtube.com/watch?v=bMmNPp3U9iE)
+##### Click to watch the youtube video!
 
 Welcome to the **Source Engine Blender Collection!** A Blender archive of **45,000+** models, **45,000+** materials, and **550+** maps ported from eight of Valve's Source games! These ports were made with optimization and efficiency in mind, while catering to ease of usability. Below, you will find the installation instructions, download links for the ported archives, and general tips you may find useful. I've jam-packed this with features and nifty tricks, so this is definitely worth a read! If you're interested in the process, that is at the bottom of this document. A lot of love went into the project. I promise you it wasn't as simple as importing an asset!
 
@@ -9,11 +10,12 @@ Minimum Blender ver.: 3.6
 
 - [What's included?](https://github.com/hisprofile/blenderstuff/blob/main/Creations/Source%20Engine%20Blender%20Collection.md#whats-included)
 - [Map Extras](https://github.com/hisprofile/blenderstuff/blob/main/Creations/Source%20Engine%20Blender%20Collection.md#map-extras)
+  - [Proximity Lights](https://github.com/hisprofile/blenderstuff/blob/main/Creations/Source%20Engine%20Blender%20Collection.md#proximity-lights)
   - [Fog](https://github.com/hisprofile/blenderstuff/blob/main/Creations/Source%20Engine%20Blender%20Collection.md#fog)
   - [Overlays Offset](https://github.com/hisprofile/blenderstuff/blob/main/Creations/Source%20Engine%20Blender%20Collection.md#overlays-offset)
   - [Delete Materials from Faces](https://github.com/hisprofile/blenderstuff/blob/main/Creations/Source%20Engine%20Blender%20Collection.md#delete-materials-from-faces)
   - [Fix Bodygroups](https://github.com/hisprofile/blenderstuff/blob/main/Creations/Source%20Engine%20Blender%20Collection.md#fix-bodygroups)
-  - [Proximity Lights](https://github.com/hisprofile/blenderstuff/blob/main/Creations/Source%20Engine%20Blender%20Collection.md#proximity-lights)
+  - [Linked Actions](https://github.com/hisprofile/blenderstuff/blob/main/Creations/Source%20Engine%20Blender%20Collection.md#linked-actions)
 - [Tips](https://github.com/hisprofile/blenderstuff/blob/main/Creations/Source%20Engine%20Blender%20Collection.md#tips)
   - [Fixing Skyboxes](https://github.com/hisprofile/blenderstuff/blob/main/Creations/Source%20Engine%20Blender%20Collection.md#fixing-skybox)
   - [Injecting Data](https://github.com/hisprofile/blenderstuff/blob/main/Creations/Source%20Engine%20Blender%20Collection.md#injecting-data)
@@ -87,6 +89,8 @@ Use the `Apply Fog Colors` tool to grab fog from an env_fog_controller!
 Overlays in the map usually have clipping issues, which can make a render look really ugly upon a render. In the `Map Extras` tab lies a panel named `Overlays Offset`. You can randomize the offset in case of overlays overlapping each other, or in case the overlays are clipping into a map. `Decal Collection` can be set for a custom set of meshes to fix. If left empty, it will fix all overlays in the `overlays` collection by default. When ready, click `Offset Overlays`. All overlays will be offset by their normal scaled by the inputted sizes.
 
 <img src="https://github.com/hisprofile/blenderstuff/assets/41131633/1c059439-1d0c-4c8d-b62f-be58c49ac3bd" width=70%>
+
+This can also be used on the brushes collection to unclip brush geometry! 
 
 ### Delete Materials from Faces
 Tons of unneeded materials such as `toolsnodraw` and `toolsblack` can pollute a file with unneeded geometry. Despite not being visible in EEVEE, they can produce visual errors in Cycles through Z-fighting. Deleting this geometry through a node group is a fast solution, and is applied to every object of a collection by batch. Set the material you wish to be deleted and click `Delete Material`. `Remove "Delete Material" Node Group` will delete every node group targeted the selected material. Shift clicking this operator will delete every node group regardless of material.
@@ -212,11 +216,9 @@ Depending where the camera is in a map, you can brighten or darken the world sha
 
 
 ### Known Issues
-- No support for 4wayblend materials
 - No animations from `.ani` files
 - Water materials are partially broken
 - L4D2's infected shader is not perfect
-- Prop animations only look good on maps
 - SolidEnergy materials are not supported
 
 ## Installation Instructions  
@@ -302,7 +304,9 @@ Prop `props/wall_emitter` has a geometry nodes effect linked as a custom propert
 # [Team Fortress 2](https://drive.google.com/drive/folders/10IZLq5VTM1S2B3D4UBdXLMO0tuZC8jq7)
 A ported archive of Team Fortress 2's assets, resulting in 7,627 models, 16,602 materials (10,055 usable out of asset library) and 185 maps. Totalling 7.55 GB
 
-This port is different from the rest, as everything is scaled at 0.1 scale to accomodate for my [TF2 ports](https://github.com/hisprofile/blenderstuff/tree/main/Guides/TF2%20Blender). Scale to 0.1905 if you wish to maintain parity with the other items in the Source Engine Blender Collection
+As per the request of a TF2Maps.net moderator, the maps and assets have been given credit. On each map with a credits section, a credits panel has been created to quote the names of the people who collaberated on the map. Also in the archive, there's a credits.txt file listing the .blend files used by the maps with credits details.
+
+These creators should be credited.
 
 # Source to Blender Porting Tools - hisanimations
 [Porting Tools .zip](https://github.com/hisprofile/blenderstuff/raw/main/Creations/source_blender_porting_tools.zip)  
