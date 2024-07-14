@@ -69,8 +69,8 @@ Blender is extremely reliant on its community. It doesn't lean towards compatibi
 ### Pros
 - Unbelievably versatile
   - If this were a swiss army knife, it'd be one you see in a cartoon. It's ridiculous what this program can do.
-- Realtime engine
-- Raytracing engine
+- Realtime rendering engine
+- Raytracing rendering engine
 - Good keyframe graph editor
 - Great for stylized art pieces
 - Great media exporter
@@ -89,4 +89,29 @@ Blender is extremely reliant on its community. It doesn't lean towards compatibi
   - You can sculpt your own faces onto the mercenaries
   - You can change the lighting on any map
   - You can make stylized shaders with the Shader Editor
-  - 
+  - You can make your own effects
+  - You can live edit textures
+- Great lighting tools
+  - Make lighting your own with Blender's four light types: Point, Sun, Spot, or Area
+- Drag 'n' drop assets
+  - With Blender's Asset Library tool and the Source Engine Blender Collection, there's no need to preview and confirm loading a model. Just drag 'n' drop into your scene!
+- HWM Face Posing
+  - Face pose just like you can in SFM!
+- Custom rigging tools
+  - With constraints (condition/operation-based transformation) idk
+- Tons of modifiers
+  - With geometry nodes, the build tool, and [much more](https://docs.blender.org/manual/en/latest/modeling/modifiers/index.html), the need to re-export a model for a simple adjustment is GONE.
+- Better media exporter
+- Better rigs
+### Cons
+- Approximation is the best we have
+  - Team Fortress 2 was never meant for Blender. That means everything needs to be approximated. Maps, facial movement, shaders, you name it. Someone can do a large part of the work, but it may be up to you to clean up the last details.
+  - Things that were approximated
+    - Lightwarps (gives the distinct toon shading we see on mercs), only in EEVEE
+    - VertexLitGeneric shaders (mercs, props, cosmetics, weapons)
+    - Map lighting (better in Cycles)
+    - Eye shaders
+- No particle support.
+  - This is the most painful part. Particles have ZERO support in Blender. However, it is absolutely possible to recreate them using geometry nodes by parsing and reading the data of the .pcf file yourself and piecing it together. See [my particles](https://github.com/hisprofile/blenderstuff/tree/main/Creations)
+- HWM Face Posing
+  - This is mentioned twice, because the way it is currently implemented may not be the most efficient but it may be the only way. Mercenary faces comprise of 300+ shape keys to deform every part of the face. These shape keys can then be controlled with ~50 flex controllers through a series of long math expressions. It's almost a mathematical simulation of facial muscles contract to make a face. These hundreds of math expressions update whenever they can, which can truly hurt performance.
