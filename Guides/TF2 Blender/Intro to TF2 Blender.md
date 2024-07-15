@@ -15,6 +15,9 @@ Source Filmmaker is an animation program- that's it. There are no tools for mode
 While it is an animation program, it also has an extremely extensive particle system for quick, good-looking effects that requires almost no experience to setup.
 
 Source Filmmaker is simple and caters to the users by having many built-in tools for their needs.
+<details>
+  <summary>Pros & Cons</summary>
+
 ### Pros
 - Workshop
   - Thousands of UGC at anyone's disposal
@@ -45,9 +48,14 @@ Source Filmmaker is simple and caters to the users by having many built-in tools
   - Making custom shape keys on demand is impossible
   - Adding single images requires making a mesh plane then porting it to SFM
 
+</details>
+
 Summary: SFM is an outdated program streamlined for animation, and that's all you'll get. Compared to Blender, it's able to display more detail at higher performance simply because it runs off a game engine. It is not a true 3D generalist program, so you miss out on many features, but it still comes jam-packed with its own. And because it uses a game engine with 20 year old code, it can run better on older systems.
 
 ## SFM for Team Fortress 2
+<details>
+  <summary>Pros & Cons</summary>
+  
 ### Pros
 - Team Fortress 2 content is native to SFM
   - Everything works and looks how it should. Face posing, character shaders, particles, maps
@@ -69,12 +77,18 @@ Summary: SFM is an outdated program streamlined for animation, and that's all yo
 - Sentries suck
 - Map lighting is permanent
 
+</details>
+
 Summary: Everything works like it should, everything looks how it should. Valve animators use SFM for TF2 animations, and so do you. But with such a fun artstyle, what's the point if you can't push it to its limits? Also particles. Big win for SFM.
 
 ## Blender
 Blender is an "everything" program. Everything you see can be changed one way or another, and I mean everything. And with its Python front-end, it's safe to say that Blender can actually do everything. (I made it control a robot arm!)
 
 Blender is extremely reliant on its community. It doesn't lean towards compatibility with anything but the industry standards. Anything you want done will most likely take some addons to bridge a gap, whether it be porting, rigging, free asset libraries, tools, etc.
+
+<details>
+  <summary>Pros & Cons</summary>
+  
 ### Pros
 - Unbelievably versatile
   - If this were a swiss army knife, it'd be one you see in a cartoon. It's ridiculous what this program can do.
@@ -88,14 +102,20 @@ Blender is extremely reliant on its community. It doesn't lean towards compatibi
 - Geometry nodes
   - Geometry nodes can literally do anything its crazy
 - Modular
+- Python front-end
 ### Cons
 - Steep learning curve
   - There is so much to learn, but don't be thrown off by how tall the mountain may seem. Slowly but surely, you'll scale it. From moving a vertex, to shading a sphere, to simulating fluids and gasses, you can master it all.
 - Requires newer hardware to run
 
+</details>
+
 Ever wanted to feel like Tony Stark? Mastering Blender has you feeling like that.
 
 ## Blender for Team Fortress 2
+<details>
+  <summary>Pros & Cons</summary>
+  
 ### Pros
 - Very flexible
   - You can sculpt your own faces onto the mercenaries
@@ -128,7 +148,7 @@ Ever wanted to feel like Tony Stark? Mastering Blender has you feeling like that
 - HWM Face Posing
   - This is mentioned twice, because the way it is currently implemented may not be the most efficient but it may be the only way. Mercenary faces comprise of 300+ shape keys to deform every part of the face. These shape keys can then be controlled with ~50 flex controllers through a series of long math expressions. It's almost a mathematical simulation of facial muscles contract to make a face. These hundreds of math expressions update whenever they can, which can truly hurt performance.
 - Map detail, such as grass planes, light cones, sprites, and more are lost.
-
+</details>
 Summary: It can be *really* fun to animate TF2 stuff in Blender. With the tools to create a true cinematic experience out of wacky animation, what could possibly go wrong?
 
 However. Blender really is a program that pushes you to do more on your own. Compared to SFM, it's higher maintenance, which tends to drive people away. But I encourage you to go out and search for tools to truly revolutionize your experience. Blender can stick with you your whole life, and it just might change it. Join the TF2 Blender Community and go through our community workshop! Our tools and ports just might inspire you to upload your own, truly making your home.
