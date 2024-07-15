@@ -60,7 +60,10 @@ There are not recommended for animating <ins>**at all.**</ins>
   - Simple. If you're coming from the Source engine, use mine (hisanimations). The face posing tool I wrote will make you feel like you never left home. If you like dragging the face for a pose, use Eccentric's. If you like using a panel, use ThatLazyArtist's.
 - How can I turn off stretching? How can I switch between IK and FK? How do I hide parts of the armature?
   - Refer to the image showing the rig and a side panel. In the `Item` tab, you can view all the properties available to the armature. Different limbs can have different properties such as switching between IK/FK. You can also hide and show different rig layers.
-- Why do Sniper's hands look low quality? 
+- Why do Sniper's hands look low quality?
+  - This is due to `In-game Models` being enabled. Both game and SFM versions of the mercenaries were ported to offer a cosmetic-compatible version and a higher quality version. For higher quality models, disable `In-game Models`.
+- All the shape keys are purple and I can't change the value. What do I do?
+  - This mean that a driver is attached to the value, and its value is being determined by something else. You are not meant to pose the face with the shape keys but with any posing panel available.
 
 [^1]:Wrinkle maps are calculated based on values of shapekeys, not how the mesh squishes and stretches.
 [^2]:It's extremely easy to deform the face using shapekeys by activating two or more of them.
