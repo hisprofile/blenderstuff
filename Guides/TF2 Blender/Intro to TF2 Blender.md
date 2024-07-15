@@ -2,6 +2,11 @@
 
 Team Fortress 2 x Blender is undoubtedly a match made in heaven. With TF2's unique artstyle and Blender's ability to manipulate anything, a good art piece is always at your grasp. If people can get away with what they do on SFM, imagine what can be done in Blender. But hold your horses!! Don't get too carried away with whatever you're thinking- Remember that TF2 content was never meant for Blender. While it may be possible to get the results that you want, there's things worth noting for your new adventure.
 
+<img src="https://github.com/user-attachments/assets/95aa5a8f-8921-4da2-9f70-cc1dfb857f12" width=60%>  
+
+<sup>Image credits: [Katy133](https://www.youtube.com/@Katy133)</sup>
+
+# Comparison
 Let's compare SFM and Blender.
 
 ## SFM
@@ -14,7 +19,6 @@ Source Filmmaker is simple and caters to the users by having many built-in tools
 - Workshop
   - Thousands of UGC at anyone's disposal
 - Streamlined for animation
-  - wip
 - Good ratio between scene detail and program performance
   - Because SFM runs off of the Source game engine, everything is more realtime due to having model, lighting, and material data pre-baked, saving tremendous amounts of calculations from being performed.
 - Realtime motion paths
@@ -38,7 +42,7 @@ Source Filmmaker is simple and caters to the users by having many built-in tools
     - Requires specific folder structure
   - If they started in Blender, why not keep them there?
 - Extremely limiting
-  - Making a custom funny face on demand is impossible
+  - Making custom shape keys on demand is impossible
   - Adding single images requires making a mesh plane then porting it to SFM
 
 ## SFM for Team Fortress 2
@@ -61,6 +65,8 @@ Source Filmmaker is simple and caters to the users by having many built-in tools
   - You cannot easily change the lighting on a map
   - You cannot easily edit a material
 - Sentries suck
+- Map lighting is permanent
+- Low
 
 ## Blender
 Blender is an "everything" program. Everything you see can be changed one way or another, and I mean everything. And with its Python front-end, it's safe to say that Blender can actually do everything. (I made it control a robot arm!)
@@ -78,6 +84,7 @@ Blender is extremely reliant on its community. It doesn't lean towards compatibi
 - Open source
 - Geometry nodes
   - Geometry nodes can literally do anything its crazy
+- Modular
 ### Cons
 - Steep learning curve
   - There is so much to learn, but don't be thrown off by how tall the mountain may seem. Slowly but surely, you'll scale it. From moving a vertex, to shading a sphere, to simulating fluids and gasses, you can master it all.
@@ -115,3 +122,4 @@ Blender is extremely reliant on its community. It doesn't lean towards compatibi
   - This is the most painful part. Particles have ZERO support in Blender. However, it is absolutely possible to recreate them using geometry nodes by parsing and reading the data of the .pcf file yourself and piecing it together. See [my particles](https://github.com/hisprofile/blenderstuff/tree/main/Creations)
 - HWM Face Posing
   - This is mentioned twice, because the way it is currently implemented may not be the most efficient but it may be the only way. Mercenary faces comprise of 300+ shape keys to deform every part of the face. These shape keys can then be controlled with ~50 flex controllers through a series of long math expressions. It's almost a mathematical simulation of facial muscles contract to make a face. These hundreds of math expressions update whenever they can, which can truly hurt performance.
+- Map detail, such as grass planes, light cones, sprites, and more are lost.
