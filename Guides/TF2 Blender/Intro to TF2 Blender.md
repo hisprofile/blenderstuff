@@ -86,6 +86,7 @@ Blender is an "everything" program. Everything you see can be changed one way or
 
 Blender is extremely reliant on its community. It doesn't lean towards compatibility with anything but the industry standards. Anything you want done will most likely take some addons to bridge a gap, whether it be porting, rigging, free asset libraries, tools, etc.
 
+Blender is an advanced program that pushes the users to help themselves.
 <details>
   <summary>Pros & Cons</summary>
   
@@ -152,3 +153,14 @@ Ever wanted to feel like Tony Stark? Mastering Blender has you feeling like that
 Summary: It can be *really* fun to animate TF2 stuff in Blender. With the tools to create a true cinematic experience out of wacky animation, what could possibly go wrong?
 
 However. Blender really is a program that pushes you to do more on your own. Compared to SFM, it's higher maintenance, which tends to drive people away. But I encourage you to go out and search for tools to truly revolutionize your experience. Blender can stick with you your whole life, and it just might change it. Join the TF2 Blender Community and go through our community workshop! Our tools and ports just might inspire you to upload your own, truly making your home.
+
+## SFM vs. Blender - Summary
+All in all, you're giving up some old toys to play with some new toys. Just because TF2 stuff wasn't meant for Blender doesn't mean it cannot work. If you're coming from SFM, you might find it difficult that your workflow is incompatible with Blender, but giving it time can really open your eyes.
+
+# What's been ported?
+- [TF2 Collection](https://drive.google.com/drive/u/1/folders/1W0aNvtbGdBOdObtBBh7nsz9w661E6P_j)
+  - Cosmetics
+  - Weapons
+- [Engineer's Buildings](https://github.com/hisprofile/blenderstuff/blob/main/Guides/TF2%20Blender/Buildings.md)
+- [Mercenaries](https://github.com/hisprofile/blenderstuff/blob/main/Guides/TF2%20Blender/Rigs.md)
+- [Maps, props, materials](https://github.com/hisprofile/blenderstuff/blob/main/Creations/Source%20Engine%20Blender%20Collection.md#team-fortress-2)
