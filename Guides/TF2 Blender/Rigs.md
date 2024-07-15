@@ -53,6 +53,15 @@ There are not recommended for animating <ins>**at all.**</ins>
 - Legacy rigs for importing animations onto
 - In-game and SFM versions of the mercenaries
 
+# Common Questions
+- Why aren't the mercenaries shaded correctly?
+  - There are two possible answers. One, you may be in Solid view, a faster preview renderer. If you are unfamiliar with the four viewing modes, it may be a good idea to familiarize yourself with Blender. Two, you may have opened a .blend file and Blender is not able to correctly locate other linked .blend files. By default, bone shapes, textures, and node groups are all linked, and when Blender cannot find the file they originally came from, they appear blank. The [TF2-Trifecta](https://github.com/hisprofile/TF2-Trifecta) has a tool to fix this. In <img src="https://github.com/Shrinks99/blender-icons/blob/main/blender-icons/scene_data.svg" height=26> scene properties under the TF2-Trifecta panel, there is a button labeled `Redefine Library Paths`. Clicking this button will have Blender attempt to relocate the missing TF2 assets according to how you entered them in the preferences.
+- What rigs are best for me?
+  - Simple. If you're coming from the Source engine, use mine (hisanimations). The face posing tool I wrote will make you feel like you never left home. If you like dragging the face for a pose, use Eccentric's. If you like using a panel, use ThatLazyArtist's.
+- How can I turn off stretching? How can I switch between IK and FK? How do I hide parts of the armature?
+  - Refer to the image showing the rig and a side panel. In the `Item` tab, you can view all the properties available to the armature. Different limbs can have different properties such as switching between IK/FK. You can also hide and show different rig layers.
+- Why do Sniper's hands look low quality? 
+
 [^1]:Wrinkle maps are calculated based on values of shapekeys, not how the mesh squishes and stretches.
 [^2]:It's extremely easy to deform the face using shapekeys by activating two or more of them.
 [^3]:The Cycles renderer does not support lightwarps. The albedo textures can be multiplied by values ranging from two to four to approximate the correct shade the mercenaries tend to have.
