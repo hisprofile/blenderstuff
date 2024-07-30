@@ -302,7 +302,7 @@ Prop `props/wall_emitter` has a geometry nodes effect linked as a custom propert
 [Lil' Boneless Pizza](https://twitter.com/lilnobonepizza) - Helped with the Flowmap shader
 
 # [Team Fortress 2](https://drive.google.com/drive/folders/10IZLq5VTM1S2B3D4UBdXLMO0tuZC8jq7)
-A ported archive of Team Fortress 2's assets, resulting in 7,627 models, 16,602 materials (10,055 usable out of asset library) and 185 maps. Totalling 7.55 GB
+A ported archive of Team Fortress 2's assets, resulting in 8,297 models, 17,799 materials (10,472 usable out of asset library) and 185 maps. Totalling 9.94 GB
 
 As per the request of a TF2Maps.net moderator, the maps and assets have been given credit. On each map with a credits section, a credits panel has been created to quote the names of the people who collaberated on the map. Also in the archive, there's a credits.txt file listing the .blend files used by the maps with credits details.
 
