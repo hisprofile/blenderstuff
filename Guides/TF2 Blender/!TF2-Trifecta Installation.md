@@ -51,4 +51,4 @@ Now add a set of rigs. Navigate to the path where you extracted the rig-set.
 <img src="https://github.com/hisprofile/blenderstuff/assets/41131633/040cbf22-5fab-4ee0-b444-ea7209da5bd7" width=300>   
 
 After Downloading and setting up The TF2 Collection & a rig-set, your installation of the TF2-Trifecta should look like this. There should be **no** mention of any missing assets.  
-<img src="https://github.com/hisprofile/blenderstuff/assets/41131633/abc32b7d-e946-48ac-8fb4-9691ac188b05" width=360>
+<img src="https://github.com/user-attachments/assets/a0bb3ad8-9788-457d-84da-f7c922be1fb2" width=360>
