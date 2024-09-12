@@ -23,3 +23,5 @@ datamodel.py in dmx_parser.zip was modified by Gorialis (https://github.com/Gori
 ## getBones.py
 - getBones.py will bring over animation onto a ported model.
 - To use this script, set the shot, the track group, and the track object that the animation set is supposed to use.
+
+Download the tools (free): https://ko-fi.com/s/d349b3dd3f
