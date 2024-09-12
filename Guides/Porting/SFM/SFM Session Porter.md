@@ -12,7 +12,7 @@ datamodel.py in dmx_parser.zip was modified by Gorialis (https://github.com/Gori
 ## session_importer.py
 - session_importer.py requires SourceIO to be installed as an addon. It will call the mdl importer tool to cache imports and animate them.
 - session_importer.py does not import maps, but it does however create a collection named "map". Users are required to import the map themselves, and assign the imported data to this "map" collection.
-- session_importer.py will only animate location and orientation on bones and objects. Scaling animation has not been implemented yet.
+- session_importer.py will only animate location and orientation on bones and objects. Scaling animation has not been implemented yet. It will also animate camera data, such as FOV (lens), aperture, and f-stop.
 - session_importer.py does not animate shape keys, as Source Engine uses a vastly different shape key system than Blender.
 - session_importer.py does not import .pcf files.
 - session_importer.py does not animate skins or bodygroups
