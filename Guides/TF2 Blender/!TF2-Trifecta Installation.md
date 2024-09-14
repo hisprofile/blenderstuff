@@ -30,7 +30,7 @@ All that is required to do is add all of these .blend files in the immediate fol
 
 Open [The TF2 Items Folder](https://drive.google.com/drive/u/1/folders/1JFzUvfiiBF8ukpL50ewZDct98E96oNmL) folder in Google Drive, and download the whole thing as a `.zip` archive, or download each file individually. The `.zip` download will be split, but don't be concerned. It's fairly easy to extract and it helps prevent crossing a rate limiter threshold.  
 
-Once the `.zip` files are downloaded, move them where ever you'd like. Select all the .zip files, right click on one, and press `Extract All`. WinRAR is better at doing this, so if you experience any errors with validating the files, it may be due to how the files were extracted. Use either WinRAR or 7zip. 
+Once the `.zip` files are downloaded, move them where ever you'd like. Select all the .zip files, right click, and press `Extract Here`. WinRAR is better at doing this, so if you experience any errors with validating the files, it may be due to how the files were extracted. Use either WinRAR or 7zip. 
 
 With all the cosmetics and weapons downloaded, it's now time to download a [Rig-set.](https://drive.google.com/drive/u/1/folders/1DF6S3lmqA8xtIMflWhzV242OrUnP62ws) Read the guide on rigs to choose which rig-set is right for you.  
 
