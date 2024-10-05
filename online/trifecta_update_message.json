@@ -1,6 +1,6 @@
 {
   "id" : "asdf",
-  "text": "Test! Test!",
+  "text": "Test!\nTest!",
   "icons": "ERROR,QUESTION",
   "size": "56,56",
 }
