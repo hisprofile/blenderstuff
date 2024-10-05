@@ -1,0 +1,4 @@
+{
+    "version": [3, 1, 0],
+    "text": "UI Fixes\nSupport for updating extra assets with a Google Drive ID\nAdded the \"Robot Rigs\" as an official rig-set\nBug fixes with the asset scanner"
+}
