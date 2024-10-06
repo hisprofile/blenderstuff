@@ -1,6 +1,6 @@
 {
-  "id" : "testvortex",
-  "text": "Can you see this? Get the new MvM rigs!",
-  "icons": "QUESTION",
+  "id" : "rigiall",
+  "text": "Rigi-All 1.4 released!\nAdds \"Merge Armatures\" feature\nAdds better finger & leg rotating for generated rigs",
+  "icons": "ARMATURE_DATA",
   "size": "56",
 }
