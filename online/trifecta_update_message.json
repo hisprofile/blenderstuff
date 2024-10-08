@@ -1,6 +1,6 @@
 {
-  "id" : "rigiall",
-  "text": "Rigi-All 1.4 released!\nAdds \"Merge Armatures\" feature\nAdds better finger & leg rotating for generated rigs",
-  "icons": "ARMATURE_DATA",
+  "id" : "guns",
+  "text": "The \"Gunslinger\" has been fixed. Update \"weapons3.blend\" through the TF2-Trifecta if possible.",
+  "icons": "ERROR",
   "size": "56",
 }
