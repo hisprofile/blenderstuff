@@ -1,4 +1,4 @@
 {
-    "version": [3, 1, 1],
-    "text": "UI fix & added link support for hint boxes\nNew Optimize Merc method through generating invalid drivers"
+    "version": [3, 1, 2],
+    "text": "You can now spawn just merc armatures by holding shift\nAdded '[\"key_ctrl\"]' and '[\"key_alt\"]' custom properties to the scene for scripter\nFixed updater bugs"
 }
