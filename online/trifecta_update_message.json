@@ -1,6 +1,6 @@
 {
-  "id" : "stufffffff",
-  "text": "The Source Engine Blender Collection has been updated for better materials, and a new panel tool.\nLINK:https://github.com/hisprofile/blenderstuff/blob/main/Creations/Source%20Engine%20Blender%20Collection.md|NAME:Source Engine Blender Collection\nThe Scream Fortress XVI cosmetics have been ported. Update the nine classes, and Allclass4.blend.\nThe mini sentry in the buildings port has been fixed.",
-  "icons": "ERROR",
-  "size": "56",
+  "id" : "rigs_update",
+  "text": "hisanimations', Eccentric's and ThatLazyArtist's rigs have received a breaking update to allow for better Cycles shading. Updating a rig-set will break previous projects. To revert, you may find the old rigs in the TF2 Rigs folder.\n_resources.blend has also received the same update. However, it will NOT break previous projects.",
+  "icons": "ERROR,ERROR",
+  "size": "56,56",
 }
