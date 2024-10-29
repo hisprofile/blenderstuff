@@ -1,0 +1,6 @@
+{
+  "id" : "rigs_update",
+  "text": "hisanimations', Eccentric's and ThatLazyArtist's rigs have received a breaking update to allow for better Cycles shading. Updating a rig-set will break previous projects. To revert, you may find the old rigs in the TF2 Rigs folder.\n_resources.blend has also received the same update. However, it will NOT break previous projects.",
+  "icons": "ERROR,ERROR",
+  "size": "56,56",
+}

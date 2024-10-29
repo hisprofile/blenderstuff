@@ -1,6 +1,6 @@
 {
-  "id" : "rigs_update",
-  "text": "hisanimations', Eccentric's and ThatLazyArtist's rigs have received a breaking update to allow for better Cycles shading. Updating a rig-set will break previous projects. To revert, you may find the old rigs in the TF2 Rigs folder.\n_resources.blend has also received the same update. However, it will NOT break previous projects.",
-  "icons": "ERROR,ERROR",
-  "size": "56,56",
+  "id" : "mercsssadfas",
+  "text": "The mercenaries have received a substantial update regarding face posing, which should be much more efficient. Update through the TF2-Trifecta if possible.\nUpdating will not break current projects, nor improve them. To update existing projects, get the \"_fix_release.py\" scripts in the link below. Scout's is generally used on all, except for Heavy, Engineer, and Spy. Paste, select a head, and run the script.\nLINK:https://github.com/hisprofile/blenderstuff/tree/main/Tools/HWM%20Scripts|NAME:New HWM Scripts",
+  "icons": "ERROR",
+  "size": "56",
 }
