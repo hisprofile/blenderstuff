@@ -1,4 +1,4 @@
 {
-    "version": [3, 1, 2],
-    "text": "You can now spawn just merc armatures by holding shift\nAdded '[\"key_ctrl\"]' and '[\"key_alt\"]' custom properties to the scene for scripters\nFixed updater bugs"
+    "version": [3, 1, 3],
+    "text": "Fixed an error report that is called when a .blend file cannot be opened."
 }
