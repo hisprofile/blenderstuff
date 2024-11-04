@@ -1,4 +1,4 @@
 {
     "version": [3, 1, 4],
-    "text": "Updated _resources.blend's ID, leading to a bad download and black cosmetics."
+    "text": "Updated _resources.blend's ID, whereas the old one lead to a bad download and black cosmetics."
 }
