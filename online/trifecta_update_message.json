@@ -1,6 +1,6 @@
 {
-  "id" : "_resources",
-  "text": "I have become aware of an issue new users have experienced, where cosmetics are fully black. This is due to _resources.blend having the incorrect download ID. With v3.1.4, you should now be able to download _resources.blend, and fix the black cosmetics.\nONLY download _resources.blend in a blank .blend file.",
+  "id" : "no one but me does the work?",
+  "text": "IK Stretching has been fixed on all rigs.\nhisanimation's rigs have now received the latest updates in terms of upgraded shape key controls, and shading. Eccentric's and TLA's already have this update. Apologies for having this take so long.\nDownload new rigs to update\n-TF2 Blender Staff",
   "icons": "ERROR",
   "size": "56",
 }
