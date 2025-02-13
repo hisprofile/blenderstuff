@@ -1,4 +1,4 @@
 {
-    "version": [3, 1, 4],
-    "text": "Updated _resources.blend's ID, whereas the old one lead to a bad download and black cosmetics."
+    "version": [3, 1, 5],
+    "text": "Updated the file ID for hisanimations' rigs, allowing users to grab the latest version of the rigs."
 }
