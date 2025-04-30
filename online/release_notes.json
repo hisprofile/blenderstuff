@@ -1,4 +1,4 @@
 {
-    "version": [3, 1, 6],
-    "text": "Fixed an issue where wrinkle maps would not properly function after spawning mercs."
+    "version": [3, 1, 7],
+    "text": "Further improvement of 3.1.6. Fixed an issue where wrinkle maps would not properly function after spawning mercs."
 }
