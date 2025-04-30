@@ -1,6 +1,6 @@
 {
   "id" : "flexes",
-  "text": "Drivers on hisanimations' rigs have been made more performant by removing redundant FCurve modifiers. Wrinkle maps have also been fixed on TF2-Trifecta 3.1.6. Please update rigs and addon.",
+  "text": "Drivers on hisanimations' rigs have been made more performant by removing redundant FCurve modifiers. Wrinkle maps have also been fixed on TF2-Trifecta 3.1.7. Please update rigs and addon.",
   "icons": "ERROR",
   "size": "56",
 }
