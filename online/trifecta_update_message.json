@@ -1,6 +1,6 @@
 {
-  "id" : "flexes",
-  "text": "Drivers on hisanimations' rigs have been made more performant by removing redundant FCurve modifiers. Wrinkle maps have also been fixed on TF2-Trifecta 3.1.7. Please update rigs and addon.",
+  "id" : "demo_cosms",
+  "text": "Six cosmetics belonging to Demo, including the All-Father, have been added to allclass4.blend. They were previously missing due to a misnaming. Update allclass4.blend through TF2-Trifecta or Google Drive.",
   "icons": "ERROR",
   "size": "56",
 }
