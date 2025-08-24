@@ -1,6 +1,6 @@
 {
-  "id" : "sum25",
-  "text": "Summer 2025 cosmetics have been ported. Update Scout-Spy (except Sniper) and Allclass4.",
+  "id" : "emb",
+  "text": "TF2-Trifecta 3.2.0 has been released. It introduces the Easy Message Board system, a fix for the pose library panel, and removed old update notifier code.",
   "icons": "ERROR",
   "size": "56",
 }
