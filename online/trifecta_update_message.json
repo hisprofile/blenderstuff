@@ -1,6 +1,6 @@
 {
-  "id" : "rigrefreshupdate",
-  "text": "TF2-Trifecta 3.2.5 has been released. Get the latest version, and download the new 'Rigify Refresh' rigs!",
-  "icons": "ERROR",
-  "size": "56",
+  "id" : "rigrefreshupdate2",
+  "text": "TF2-Trifecta 3.2.5 has been released. Get the latest version, and download the new 'Rigify Refresh' rigs!\nLINK:https://github.com/hisprofile/blenderstuff/blob/main/Guides/TF2%20Blender/2026_02_08%20-%20Rigify%20Refresh%20Rigs.md|NAME:Get the new rigs here!",
+  "icons": "ERROR,URL",
+  "size": "56,56",
 }
