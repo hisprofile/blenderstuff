@@ -22,6 +22,8 @@ The following are features accessible in the `Item` panel in the 3D viewport.
 - **Direct Export to .DMX animation**
   - The `Quick Export to DMX` tool will go through the scene frame range, preview or not, and export the Rigify animation as a .dmx animation. This can then be imported into SFM. **Make sure the matrix type is in SFM mode!**
 
+There are rigs for 4.5 and older, and rigs for 5.0 and newer. The newest rigs will be taken care of the most. Eccentric's and TLA's rigs will not receive this update.
+
 Use these rigs with the latest version of the TF2-Trifecta!
 
 ## Feature Documentation
