@@ -1,6 +1,6 @@
 {
-  "id" : "emb",
-  "text": "TF2-Trifecta 3.2.0 has been released. It introduces the Easy Message Board system, a fix for the pose library panel, and removed old update notifier code.",
+  "id" : "rigrefreshupdate",
+  "text": "TF2-Trifecta 3.2.5 has been released. Get the latest version, and download the new 'Rigify Refresh' rigs!",
   "icons": "ERROR",
   "size": "56",
 }
