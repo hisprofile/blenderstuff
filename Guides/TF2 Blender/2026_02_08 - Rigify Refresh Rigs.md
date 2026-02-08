@@ -26,6 +26,7 @@ There are rigs for 4.5 and older, and rigs for 5.0 and newer. The newest rigs wi
 
 Use these rigs with the latest version of the TF2-Trifecta!
 
+[Rig Downloads](https://drive.google.com/open?id=1DF6S3lmqA8xtIMflWhzV242OrUnP62ws&usp=drive_fs)
 ## Feature Documentation
 ### Swap Into DEF- Bones
 The `Swap Deformation Type` tool can swap usage between the original rig for deformation, and Rigify's Deform (DEF-) bones. Using "Better Deform" can result in better deformations and grants more options given by Rigify's properties.
