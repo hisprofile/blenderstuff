@@ -11,5 +11,5 @@ Rigi-All does not replace Blender's built-in Rigify add-on, but rather elevates 
 - [Miscellaneous](https://github.com/hisprofile/blenderstuff/blob/main/Guides/Rigi-All/Documentation/Miscellaneous.md)
 
 # Links:
-[Official Rigi-All extension page](https://extensions.blender.org/add-ons/rigi-all/)
+[Official Rigi-All extension page](https://extensions.blender.org/add-ons/rigi-all/)  
 If it doesn't take too much of your time, please consider rating the add-on!
