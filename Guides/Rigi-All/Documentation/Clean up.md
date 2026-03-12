@@ -56,3 +56,6 @@ Remove unused bones.
     If enabled, bones & vertex groups with zero vertices using them will be affected. This takes longer as a deeper search is performed.
 
 Remove unused bones and vertex groups.
+# Other Links
+- [Rigging](https://github.com/hisprofile/blenderstuff/blob/main/Guides/Rigi-All/Documentation/Rigging.md)
+- [Miscellaneous](https://github.com/hisprofile/blenderstuff/blob/main/Guides/Rigi-All/Documentation/Miscellaneous.md)
