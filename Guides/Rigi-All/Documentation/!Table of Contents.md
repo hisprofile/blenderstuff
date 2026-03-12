@@ -6,7 +6,10 @@ Rigi-All is a suite of tools dedicated to the building of a quick & easy Rigify 
 Rigi-All does not replace Blender's built-in Rigify add-on, but rather elevates its functionality with macros to make generating a Rigify rig as fast as possible. Therefore, Rigi-All requires Rigify to be enabled to use its rigging tools.
 
 ## Table of Contents:
-pass
+- [Rigging](https://github.com/hisprofile/blenderstuff/blob/main/Guides/Rigi-All/Documentation/Rigging.md)
+- [Clean Up](https://github.com/hisprofile/blenderstuff/blob/main/Guides/Rigi-All/Documentation/Clean%20up.md)
+- [Miscellaneous](https://github.com/hisprofile/blenderstuff/blob/main/Guides/Rigi-All/Documentation/Miscellaneous.md)
 
 # Links:
 [Official Rigi-All extension page](https://extensions.blender.org/add-ons/rigi-all/)
+If it doesn't take too much of your time, please consider rating the add-on!
