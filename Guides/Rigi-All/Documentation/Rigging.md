@@ -99,3 +99,5 @@ This should be done last. It will mark any bone that was not a part of any limb 
 Marks the selected bones as Extra bones. These bones will carry over into the generated Rigify Rig.
 
 # Other Links
+- [Clean Up](https://github.com/hisprofile/blenderstuff/blob/main/Guides/Rigi-All/Documentation/Clean%20up.md)
+- [Miscellaneous](https://github.com/hisprofile/blenderstuff/blob/main/Guides/Rigi-All/Documentation/Miscellaneous.md)
