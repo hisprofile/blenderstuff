@@ -43,3 +43,7 @@ To control more than one object with a single visibility item, gather some objec
 <img width=50% alt="image" src="https://github.com/user-attachments/assets/623b513c-9141-4443-86a4-6a9da17db4cf" />  
 <img width=50% alt="image" src="https://github.com/user-attachments/assets/ee9038a0-496b-4561-a825-72170d624fa7" />  
 <img width=50% alt="image" src="https://github.com/user-attachments/assets/30e9b46a-eb9b-4d46-8f5f-393c101652dd" />
+
+# Other Links
+- [Rigging](https://github.com/hisprofile/blenderstuff/blob/main/Guides/Rigi-All/Documentation/Rigging.md)
+- [Clean Up](https://github.com/hisprofile/blenderstuff/blob/main/Guides/Rigi-All/Documentation/Clean%20up.md)
