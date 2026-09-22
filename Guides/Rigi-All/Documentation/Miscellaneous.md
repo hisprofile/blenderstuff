@@ -33,7 +33,7 @@ To get started, gather objects that will have their visibility controlled. The a
 
 <img width=75% alt="image" src="https://github.com/user-attachments/assets/a073a73c-e06d-41d1-9dd7-b9b193f0b944" />
 
-Et voilà! You have a visibility switch as a custom property! Just so there's no confusion, users are not required to instal Rigi-All to use these visibility switches.
+Et voilà! You have a visibility switch as a custom property! Just so there's no confusion, users are not required to install Rigi-All to use these visibility switches.
 
 To control more than one object with a single visibility item, gather some objects, and use the <img width=20 src="https://github.com/Shrinks99/blender-icons/blob/main/blender-icons/restrict_select_off.svg"> Select tool to set multiple objects to a visibility item.
 
